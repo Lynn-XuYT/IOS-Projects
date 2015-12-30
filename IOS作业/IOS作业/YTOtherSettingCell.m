@@ -25,6 +25,8 @@
 {
     if (_switchView == nil) {
         _switchView = [[UISwitch alloc] init];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        _switchView.on = [defaults boolForKey:self.item.title];
         [_switchView addTarget:self action:@selector(switchStateChange) forControlEvents:UIControlEventValueChanged];
     }
     return _switchView;
@@ -61,7 +63,9 @@
 
 -(void)setItem:(YTSettingItem *)item
 {
-    self.textLabel.text = self.item.title;
+    _item = item;
+    self.textLabel.text = item.title;
+    self.textLabel.backgroundColor = [UIColor redColor];
     self.accessoryView = self.switchView;
 }
 @end

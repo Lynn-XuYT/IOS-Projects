@@ -15,4 +15,8 @@
  */
 + (UIImage *)resizableImage:(NSString *)name;
 
+/**
+ *  截图保存
+ */
++ (instancetype)captureWithView:(UIView *)view;
 @end

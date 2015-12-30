@@ -33,7 +33,6 @@
     
     // 添加对应个数的按钮
     for (int  i = 0; i<self.viewControllers.count; i++) {
-        NSLog(@"=====");
         NSString* name = [NSString stringWithFormat:@"TabBar0%d",i+1];
         NSString* selName = [NSString stringWithFormat:@"TabBarSel0%d",i+1];
         [myTabBar addTabBarButtonWithName:name selName:selName];

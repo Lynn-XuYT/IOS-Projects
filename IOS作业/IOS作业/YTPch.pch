@@ -21,4 +21,10 @@
 #define YTTitleFont [UIFont systemFontOfSize:17]
 // 正文字体
 #define YTTextFont [UIFont systemFontOfSize:15]
+
+// Memo文件路径
+#define YTMemoFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"memo.data"]
+
+// user文件路径
+#define YTUserFilePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"user.sqlite"]
 #endif /* YTPch_pch */

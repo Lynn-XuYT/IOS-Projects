@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 @class YTMemo;
 
-@interface YTMemoFrame : NSObject
+@interface YTMemoFrame : NSObject<NSCoding>
 
 /**
  *  标题的frame
@@ -33,4 +33,9 @@
 @property (nonatomic, assign, readonly) CGFloat cellHeight;
 
 @property (nonatomic, strong) YTMemo *memo;
+
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *substitle;
+@property (nonatomic, copy) NSString *time;
+
 @end

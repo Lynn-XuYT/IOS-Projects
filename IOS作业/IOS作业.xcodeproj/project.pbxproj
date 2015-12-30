@@ -36,6 +36,12 @@
 		A9D7C1C31C2AE42D00F6814E /* IOS__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1C21C2AE42D00F6814E /* IOS__UITests.m */; };
 		A9D7C1D21C2AE55100F6814E /* YTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1D11C2AE55100F6814E /* YTTabBarController.m */; };
 		A9D7C1D81C2AE60000F6814E /* YTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1D71C2AE60000F6814E /* YTNavigationController.m */; };
+		BA4776391C337A1900C7B5B8 /* YTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4776381C337A1900C7B5B8 /* YTUser.m */; };
+		BA47763B1C34034300C7B5B8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA47763A1C34034300C7B5B8 /* libsqlite3.tbd */; };
+		BA4776401C34249B00C7B5B8 /* YTMoreFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47763F1C34249B00C7B5B8 /* YTMoreFunctionViewController.m */; };
+		BA4776431C342BE100C7B5B8 /* YTDrawPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4776421C342BE100C7B5B8 /* YTDrawPicViewController.m */; };
+		BA4776461C34312B00C7B5B8 /* YTDrawPicView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4776451C34312B00C7B5B8 /* YTDrawPicView.m */; };
+		BA47764B1C34487E00C7B5B8 /* YTOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47764A1C34487E00C7B5B8 /* YTOtherViewController.m */; };
 		BAE4EACD1C3285A5004BC90B /* YTBaseMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EACC1C3285A5004BC90B /* YTBaseMemoViewController.m */; };
 		BAE4EAD01C32BA16004BC90B /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */; };
 		BAE4EAD31C32BB5F004BC90B /* YTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */; };
@@ -122,10 +128,21 @@
 		A9D7C1D11C2AE55100F6814E /* YTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTabBarController.m; sourceTree = "<group>"; };
 		A9D7C1D61C2AE60000F6814E /* YTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTNavigationController.h; sourceTree = "<group>"; };
 		A9D7C1D71C2AE60000F6814E /* YTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTNavigationController.m; sourceTree = "<group>"; };
+		BA4776371C337A1900C7B5B8 /* YTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTUser.h; sourceTree = "<group>"; };
+		BA4776381C337A1900C7B5B8 /* YTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTUser.m; sourceTree = "<group>"; };
+		BA47763A1C34034300C7B5B8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BA47763E1C34249B00C7B5B8 /* YTMoreFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTMoreFunctionViewController.h; sourceTree = "<group>"; };
+		BA47763F1C34249B00C7B5B8 /* YTMoreFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTMoreFunctionViewController.m; sourceTree = "<group>"; };
+		BA4776411C342BE100C7B5B8 /* YTDrawPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTDrawPicViewController.h; sourceTree = "<group>"; };
+		BA4776421C342BE100C7B5B8 /* YTDrawPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTDrawPicViewController.m; sourceTree = "<group>"; };
+		BA4776441C34312B00C7B5B8 /* YTDrawPicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTDrawPicView.h; sourceTree = "<group>"; };
+		BA4776451C34312B00C7B5B8 /* YTDrawPicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTDrawPicView.m; sourceTree = "<group>"; };
+		BA4776491C34487E00C7B5B8 /* YTOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTOtherViewController.h; sourceTree = "<group>"; };
+		BA47764A1C34487E00C7B5B8 /* YTOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTOtherViewController.m; sourceTree = "<group>"; };
 		BAE4EACB1C3285A5004BC90B /* YTBaseMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBaseMemoViewController.h; sourceTree = "<group>"; };
 		BAE4EACC1C3285A5004BC90B /* YTBaseMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTBaseMemoViewController.m; sourceTree = "<group>"; };
-		BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "IOS作业/UIImage+Extension.h"; sourceTree = "<group>"; };
-		BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "IOS作业/UIImage+Extension.m"; sourceTree = "<group>"; };
+		BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		BAE4EAD11C32BB5F004BC90B /* YTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTabBarButton.h; sourceTree = "<group>"; };
 		BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTabBarButton.m; sourceTree = "<group>"; };
 		BAE4EAD41C32BBCE004BC90B /* YTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTabBar.h; sourceTree = "<group>"; };
@@ -145,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA47763B1C34034300C7B5B8 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +319,7 @@
 		A99EFA381C2BA40C00FB3BC2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				BA4776361C3379C800C7B5B8 /* Model */,
 				A99EFA391C2BA41A00FB3BC2 /* Controller */,
 			);
 			name = Login;
@@ -338,8 +357,6 @@
 		A9D7C1911C2AE42D00F6814E = {
 			isa = PBXGroup;
 			children = (
-				BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */,
-				BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */,
 				A9D7C19C1C2AE42D00F6814E /* IOS作业 */,
 				A9D7C1B61C2AE42D00F6814E /* IOS作业Tests */,
 				A9D7C1C11C2AE42D00F6814E /* IOS作业UITests */,
@@ -400,6 +417,7 @@
 		A9D7C1D91C2AE6FC00F6814E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BA47763C1C341DD400C7B5B8 /* MoreFunction */,
 				A98CF82F1C30C7F300671409 /* Memo */,
 				A998ED4F1C2BDC3700CD7DA8 /* Setting */,
 				A99EFA381C2BA40C00FB3BC2 /* Login */,
@@ -412,6 +430,8 @@
 		A9D7C1DA1C2AE70400F6814E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BA4776481C34462700C7B5B8 /* Extension */,
+				BA47763A1C34034300C7B5B8 /* libsqlite3.tbd */,
 				A95AE1551C2BB483008C4556 /* MBProgressHUD */,
 				A9D7C1A01C2AE42D00F6814E /* AppDelegate.h */,
 				A9D7C1A11C2AE42D00F6814E /* AppDelegate.m */,
@@ -448,6 +468,55 @@
 				BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BA4776361C3379C800C7B5B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA4776371C337A1900C7B5B8 /* YTUser.h */,
+				BA4776381C337A1900C7B5B8 /* YTUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BA47763C1C341DD400C7B5B8 /* MoreFunction */ = {
+			isa = PBXGroup;
+			children = (
+				BA4776471C34313100C7B5B8 /* View */,
+				BA47763D1C34232B00C7B5B8 /* Controller */,
+			);
+			name = MoreFunction;
+			sourceTree = "<group>";
+		};
+		BA47763D1C34232B00C7B5B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA47763E1C34249B00C7B5B8 /* YTMoreFunctionViewController.h */,
+				BA47763F1C34249B00C7B5B8 /* YTMoreFunctionViewController.m */,
+				BA4776411C342BE100C7B5B8 /* YTDrawPicViewController.h */,
+				BA4776421C342BE100C7B5B8 /* YTDrawPicViewController.m */,
+				BA4776491C34487E00C7B5B8 /* YTOtherViewController.h */,
+				BA47764A1C34487E00C7B5B8 /* YTOtherViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BA4776471C34313100C7B5B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA4776441C34312B00C7B5B8 /* YTDrawPicView.h */,
+				BA4776451C34312B00C7B5B8 /* YTDrawPicView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BA4776481C34462700C7B5B8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */,
+				BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		BAE4EAD71C32C314004BC90B /* Share */ = {
@@ -619,6 +688,7 @@
 				A98CF8351C30C91000671409 /* YTMemoViewController.m in Sources */,
 				A9A2941F1C30E1E30087ECA3 /* YTMemo.m in Sources */,
 				A95D61791C2CEBD200728637 /* YTAboutViewController.m in Sources */,
+				BA47764B1C34487E00C7B5B8 /* YTOtherViewController.m in Sources */,
 				A9D7C1D21C2AE55100F6814E /* YTTabBarController.m in Sources */,
 				BAE4EAE51C32E127004BC90B /* YTOtherSettingViewController.m in Sources */,
 				A95D617C1C2D0CA800728637 /* YTSettingCell.m in Sources */,
@@ -626,20 +696,24 @@
 				A95AE1541C2BB47A008C4556 /* MBProgressHUD.m in Sources */,
 				A95D61701C2CE4C000728637 /* YTSelfInfoViewController.m in Sources */,
 				A9D7C1A21C2AE42D00F6814E /* AppDelegate.m in Sources */,
+				BA4776391C337A1900C7B5B8 /* YTUser.m in Sources */,
 				A9D7C19F1C2AE42D00F6814E /* main.m in Sources */,
 				A95D61731C2CE8ED00728637 /* YTBaseViewController.m in Sources */,
+				BA4776431C342BE100C7B5B8 /* YTDrawPicViewController.m in Sources */,
 				A95AE1521C2BB47A008C4556 /* MBProgressHUD+MJ.m in Sources */,
 				BAE4EAD01C32BA16004BC90B /* UIImage+Extension.m in Sources */,
 				A99EFA3F1C2BA66300FB3BC2 /* YTSignUpViewController.m in Sources */,
 				BAE4EAE81C32E1D9004BC90B /* YTOtherSettingCell.m in Sources */,
 				A9A2942B1C30E3DC0087ECA3 /* YTEditViewController.m in Sources */,
 				A9B82AA01C2D298600B23E81 /* YTSettingGroup.m in Sources */,
+				BA4776401C34249B00C7B5B8 /* YTMoreFunctionViewController.m in Sources */,
 				A9A294241C30E1FA0087ECA3 /* YTMemoCell.m in Sources */,
 				A9A2942A1C30E3DC0087ECA3 /* YTAddViewController.m in Sources */,
 				A95D61801C2D0D0200728637 /* YTSettingItem.m in Sources */,
 				A9A294251C30E1FA0087ECA3 /* YTMemoFrame.m in Sources */,
 				A998ED531C2BDCA400CD7DA8 /* YTSettingViewController.m in Sources */,
 				A9D7C1D81C2AE60000F6814E /* YTNavigationController.m in Sources */,
+				BA4776461C34312B00C7B5B8 /* YTDrawPicView.m in Sources */,
 				BAE4EACD1C3285A5004BC90B /* YTBaseMemoViewController.m in Sources */,
 				A9AE30711C2F854800554B51 /* YTSelfInfo.m in Sources */,
 			);

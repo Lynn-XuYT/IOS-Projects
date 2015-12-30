@@ -15,6 +15,8 @@
 #import "YTAboutViewController.h"
 #import "YTHelpViewController.h"
 #import "YTOtherSettingViewController.h"
+#import "YTDrawPicViewController.h"
+#import "YTOtherViewController.h"
 @interface YTBaseViewController ()<YTBaseSelfInfoViewControllerDelegate>
 
 @end
@@ -129,7 +131,19 @@
             YTOtherSettingViewController* aboutVC = vc;
             aboutVC.title = item.title;
             [self.navigationController pushViewController:aboutVC animated:YES];
+        }else if ([vc isKindOfClass:[YTDrawPicViewController class]])
+        {
+            YTDrawPicViewController* drawPicVC = vc;
+            drawPicVC.title = item.title;
+            [self.navigationController pushViewController:drawPicVC animated:YES];
+        }else if ([vc isKindOfClass:[YTOtherViewController class]])
+        {
+            YTOtherViewController* otherVC = vc;
+            otherVC.title = item.title;
+            [self.navigationController pushViewController:otherVC animated:YES];
         }
+        
+        
     }
     
 }

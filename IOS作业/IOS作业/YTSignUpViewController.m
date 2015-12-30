@@ -8,8 +8,12 @@
 
 #import "YTSignUpViewController.h"
 #import "MBProgressHUD+MJ.h"
+#import "YTUser.h"
+#import <sqlite3.h>
 @interface YTSignUpViewController()
-
+{
+    sqlite3 *_database;
+}
 - (IBAction)returnBtnClick:(UIButton *)sender;
 
 - (IBAction)signUpBtnClick:(UIButton *)sender;
@@ -29,9 +33,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledChanged) name:UITextFieldTextDidChangeNotification object:self.pwdField1];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledChanged) name:UITextFieldTextDidChangeNotification object:self.pwdField2];
-
-    
-    
 }
 - (void)dealloc
 {
@@ -63,10 +64,13 @@
         return;
     }
     // 存数数据
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:self.pwdField1.text forKey:YTPwdKey];
-    [defaults setObject:self.accountField.text forKey:YTAccountKey];
-    [defaults synchronize];
+    YTUser *user = [[YTUser alloc] init];
+    user.account = self.accountField.text;
+    user.userPWD = self.pwdField1.text;
+    
+    NSLog(@"%@++++%@", user.account, user.userPWD);
+    
+    [self saveUser:user];
     
     [MBProgressHUD showMessage:@"注册成功"];
     
@@ -78,4 +82,73 @@
     
     
 }
+
+- (BOOL)isOpenedDB
+{
+    // 创建/打开数据库
+    int result = sqlite3_open(YTUserFilePath.UTF8String, &_database);
+    if ( result == SQLITE_OK) {
+        // 创建表
+        const char *sql = "create table if not exists t_user (id integer primary key autoincrement, account text, userPWD text);";
+    
+        char * errorMSM = NULL;
+        int result = sqlite3_exec(_database, sql, NULL, NULL, &errorMSM);
+        if (result == SQLITE_OK) {
+            NSLog(@"OK");
+        }
+        else{
+            NSLog(@"创建表失败:%s",errorMSM);
+            return NO;
+        }
+    }
+    else
+    {
+        NSLog(@"创建数据库失败");
+        return NO;
+    }
+    return YES;
+}
+
+- (void)saveUser:(YTUser *)user
+{
+    if ([self isOpenedDB]) {
+        NSString* sql = [NSString stringWithFormat: @"insert into t_user ( account, userPWD ) values ( '%@', '%@')",user.account, user.userPWD];
+        char * errorMSM = NULL;
+        int result = sqlite3_exec(_database, sql.UTF8String, NULL, NULL, &errorMSM);
+        if (result == SQLITE_OK) {
+            NSLog(@"OK");
+        }
+        else{
+            NSLog(@"创建表失败:%s",errorMSM);
+        }
+        
+        // 查询
+        sql = @"select account, userPWD from t_user;";
+        
+        // 定义一个stmt存放结果集
+        sqlite3_stmt *stmt = NULL;
+        
+        // 检测sql语句的合法性
+        result = sqlite3_prepare_v2(_database, sql.UTF8String, -1, &stmt, NULL);
+        if (result == SQLITE_OK) {
+            NSLog(@"OK");
+            // 设置占位符内容
+            //sqlite3_bind_text(stmt, 1,str.UTF8String, -1, NULL);
+            
+            while (sqlite3_step(stmt) == SQLITE_ROW) {
+                int _id = sqlite3_column_int(stmt, 0);
+                char *_name = (char *)sqlite3_column_text(stmt, 1);
+                NSString *name = [NSString stringWithUTF8String:_name];
+                char *_name1 = (char *)sqlite3_column_text(stmt, 1);
+                NSString *name1 = [NSString stringWithUTF8String:_name1];
+                NSLog(@"id=%i, name=%@, age=%@", _id, name, name1);
+            }
+
+        }
+        else{
+            NSLog(@"非法");
+        }
+    }
+}
+
 @end

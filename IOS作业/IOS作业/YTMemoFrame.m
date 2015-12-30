@@ -12,7 +12,41 @@
 #import "YTMemo.h"
 
 @implementation YTMemoFrame
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    YTMemo *memo = [[YTMemo alloc]init];
+    memo = self.memo;
+    
+    [aCoder encodeObject:memo.title forKey:@"title"];
+    [aCoder encodeObject:memo.substitle forKey:@"substitle"];
+    [aCoder encodeObject:memo.time forKey:@"time"];
+    [aCoder encodeCGRect:_timeF forKey:@"timeF"];
+    [aCoder encodeCGRect:_subtitleF forKey:@"subtitleF"];
+    [aCoder encodeCGRect:_titleF forKey:@"titleF"];
+    [aCoder encodeFloat:_cellHeight forKey:@"cellHeight"];
+}
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        
+        self.title = [aDecoder decodeObjectForKey:@"title"];
+        self.substitle = [aDecoder decodeObjectForKey:@"substitle"];
+        self.time = [aDecoder decodeObjectForKey:@"time"];
+        _timeF = [aDecoder decodeCGRectForKey:@"timeF"];
+        _subtitleF = [aDecoder decodeCGRectForKey:@"subtitleF"];
+        _titleF = [aDecoder decodeCGRectForKey:@"titleF"];
+        _cellHeight = [aDecoder decodeFloatForKey:@"cellHeight"];
+    
+        YTMemo *memo = [[YTMemo alloc]init];
+        
+        memo.title = self.title;
+        memo.substitle = self.substitle;
+        memo.time = self.time;
+        self.memo = memo;
+    }
+    return self;
+}
 /**
  *  计算文字尺寸
  *
@@ -30,6 +64,10 @@
 - (void)setMemo:(YTMemo *)memo
 {
     _memo = memo;
+    
+    _title = _memo.title;
+    _time = _memo.time;
+    _substitle = _memo.substitle;
     
     // 子控件之间的间距
     CGFloat padding = 10;

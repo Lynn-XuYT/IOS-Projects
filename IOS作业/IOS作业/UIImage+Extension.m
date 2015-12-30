@@ -17,6 +17,21 @@
     return [normal resizableImageWithCapInsets:UIEdgeInsetsMake(h, w, h, w)];
 }
 
-
++ (instancetype)captureWithView:(UIView *)view
+{
+    // 开启上下文
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, 0.0);
+    
+    // 将控制器view的layer渲染到上下文
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    // 取出图片
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 结束上下文
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
 @end
 

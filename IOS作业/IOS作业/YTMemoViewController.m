@@ -24,7 +24,14 @@
 - (NSMutableArray *)memoFrames
 {
     if (_memoFrames == nil) {
-        _memoFrames = [NSMutableArray array];
+        _memoFrames = [NSKeyedUnarchiver unarchiveObjectWithFile:YTMemoFilepath];
+        NSLog(@"%@",_memoFrames[0]);
+        YTMemoFrame *frame = _memoFrames[0];
+        NSLog(@"%@",frame.title);
+        
+        if (_memoFrames == nil) {
+            _memoFrames = [NSMutableArray array];
+        }
     }
     return _memoFrames;
 }
@@ -34,11 +41,7 @@
     YTAddViewController *vc = [[YTAddViewController alloc] init];
     vc.delegate = self;
     [self.navigationController pushViewController:vc animated:YES];
-
-
 }
-
-
 
 - (void)viewDidLoad
 {
@@ -55,7 +58,6 @@
 {
 #warning Incomplete implementation, return the number of rows
     return self.memoFrames.count;
-//    return 2;
 }
 
 
@@ -77,21 +79,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 取消选中这行
-    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"%ld======%ld",(long)indexPath.section,(long)indexPath.row);
     
     YTEditViewController *vc = [[YTEditViewController alloc] init];
     
     if (self.memoFrames.count) {
         // 模型数据
         YTMemoFrame *memoFrame = self.memoFrames[indexPath.row];
-        
-        // 取得选中那一行的数据
-        //NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        
         vc.memoFrame = memoFrame;
-        NSLog(@"%@",memoFrame.memo.time);
         vc.delegate = self;
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -102,12 +96,20 @@
 - (void)editViewController:(YTEditViewController *)editMemoVc didSaveInfo:(YTMemoFrame *)memoFrame
 {
     [self.tableView reloadData];
+    // 归档
+    [NSKeyedArchiver archiveRootObject:self.memoFrames toFile:YTMemoFilepath];
 }
 
 #pragma mark 代理方法
 - (void)addViewController:(YTAddViewController *)addMemoVc didSaveInfo:(YTMemoFrame *)memoFrame
 {
     [self.memoFrames addObject:memoFrame];
+    
+    NSLog(@"addViewController ==== %@", memoFrame.memo.title);
+    YTMemoFrame *frame = [self.memoFrames lastObject];
+    NSLog(@"++++++++++++%@",frame.title);
+    // 归档
+    [NSKeyedArchiver archiveRootObject:self.memoFrames toFile:YTMemoFilepath];
     [self.tableView reloadData];
 }
 
@@ -126,6 +128,7 @@
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
         
         // 归档
+        [NSKeyedArchiver archiveRootObject:self.memoFrames toFile:YTMemoFilepath];
        
     }
 }

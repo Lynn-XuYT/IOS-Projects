@@ -18,17 +18,29 @@
 
 - (void)loadView
 {
-    
     [super loadView];
-    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(leftButtonClick)];
+    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftButtonClick)];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
 - (void)leftButtonClick
 {
-    self.titleFeild.enabled = YES;
-    self.subTitleView.editable = YES;
-    [self.titleFeild becomeFirstResponder];
+    if (!self.titleFeild.enabled)
+    {
+        self.navigationItem.rightBarButtonItem.title = @"取消";
+        self.titleFeild.enabled = YES;
+        self.subTitleView.editable = YES;
+        
+        [self.titleFeild becomeFirstResponder];
+    }
+    else
+    {
+        self.navigationItem.rightBarButtonItem.title = @"编辑";
+        
+        self.titleFeild.enabled = NO;
+        self.subTitleView.editable = NO;
+        [self.view endEditing:YES];
+    }
 }
 
 - (void)viewDidLoad {
