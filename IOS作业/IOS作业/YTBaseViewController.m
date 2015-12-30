@@ -11,8 +11,10 @@
 #import "YTSettingCell.h"
 #import "YTSettingItem.h"
 #import "YTSelfInfoViewController.h"
-#import "YTMottoViewController.h"
-
+#import "YTShareViewController.h"
+#import "YTAboutViewController.h"
+#import "YTHelpViewController.h"
+#import "YTOtherSettingViewController.h"
 @interface YTBaseViewController ()<YTBaseSelfInfoViewControllerDelegate>
 
 @end
@@ -92,31 +94,41 @@
         
         id vc = [[item.destVcClass alloc] init];
         
+        // 取得选中那一行的数据
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        YTSettingGroup* group = self.data[path.section];
+        
         if ([vc isKindOfClass:[YTSelfInfoViewController class]]) {
             YTSelfInfoViewController* selfInfoVC = vc;
-            
-            // 取得选中那一行的数据
-            NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-            YTSettingGroup* group = self.data[path.section];
-            
             selfInfoVC.item = group.items[path.row];
             selfInfoVC.delegate = self;
-            selfInfoVC.title = @"设置昵称";//item.title;
+            selfInfoVC.title = @"设置昵称";
             selfInfoVC.item.subtitle = item.subtitle;
             [self.navigationController pushViewController:selfInfoVC animated:YES];
         }
-        else if ([vc isKindOfClass:[YTMottoViewController class]]) {
-            YTMottoViewController* selfInfoVC = vc;
-            
-            // 取得选中那一行的数据
-            NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-            YTSettingGroup* group = self.data[path.section];
-            
-            selfInfoVC.item = group.items[path.row];
-            selfInfoVC.delegate = self;
-            selfInfoVC.title = item.title;
-            selfInfoVC.item.subtitle = item.subtitle;
-            [self.navigationController pushViewController:selfInfoVC animated:YES];
+        else if ( [vc isKindOfClass: [YTShareViewController class]])
+        {
+            YTShareViewController* shareVC = vc;
+            shareVC.title = item.title;
+            [self.navigationController pushViewController:shareVC animated:YES];
+        }
+        else if ( [vc isKindOfClass: [YTHelpViewController class]])
+        {
+            YTHelpViewController* helpVC = vc;
+            helpVC.title = item.title;
+            [self.navigationController pushViewController:helpVC animated:YES];
+        }
+        else if ( [vc isKindOfClass: [YTAboutViewController class]])
+        {
+            YTAboutViewController* aboutVC = vc;
+            aboutVC.title = item.title;
+            [self.navigationController pushViewController:aboutVC animated:YES];
+        }
+        else if ( [vc isKindOfClass: [YTOtherSettingViewController class]])
+        {
+            YTOtherSettingViewController* aboutVC = vc;
+            aboutVC.title = item.title;
+            [self.navigationController pushViewController:aboutVC animated:YES];
         }
     }
     
@@ -124,9 +136,6 @@
 
 - (void)selfInfoViewController:(YTBaseSelfInfoViewController *)selfInfoVc didSaveInfo:(YTSettingItem *)selfInfo
 {
-    if ([selfInfoVc isKindOfClass:[YTMottoViewController class]]) {
-        NSLog(@"reloadData====%@",selfInfoVc.item.subtitle);
-    }
     
     [self.tableView reloadData];
     

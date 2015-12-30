@@ -6,8 +6,8 @@
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
-#import "YTBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface YTAboutViewController : YTBaseViewController
+@interface YTAboutViewController : UIViewController
 
 @end

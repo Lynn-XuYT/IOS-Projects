@@ -26,7 +26,6 @@
 		A9A2942B1C30E3DC0087ECA3 /* YTEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A294291C30E3DC0087ECA3 /* YTEditViewController.m */; };
 		A9AE30711C2F854800554B51 /* YTSelfInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE30701C2F854800554B51 /* YTSelfInfo.m */; };
 		A9B82AA01C2D298600B23E81 /* YTSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B82A9F1C2D298600B23E81 /* YTSettingGroup.m */; };
-		A9D117CE1C3024A900F83133 /* YTMottoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D117CD1C3024A900F83133 /* YTMottoViewController.m */; };
 		A9D117D11C3025C300F83133 /* YTBaseSelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D117D01C3025C300F83133 /* YTBaseSelfInfoViewController.m */; };
 		A9D7C19F1C2AE42D00F6814E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C19E1C2AE42D00F6814E /* main.m */; };
 		A9D7C1A21C2AE42D00F6814E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1A11C2AE42D00F6814E /* AppDelegate.m */; };
@@ -37,10 +36,14 @@
 		A9D7C1C31C2AE42D00F6814E /* IOS__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1C21C2AE42D00F6814E /* IOS__UITests.m */; };
 		A9D7C1D21C2AE55100F6814E /* YTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1D11C2AE55100F6814E /* YTTabBarController.m */; };
 		A9D7C1D81C2AE60000F6814E /* YTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1D71C2AE60000F6814E /* YTNavigationController.m */; };
-		A9D7C1E01C2AE76900F6814E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1DF1C2AE76900F6814E /* UIImage+Extension.m */; };
-		A9D7C1E51C2AE79E00F6814E /* YTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1E21C2AE79E00F6814E /* YTTabBar.m */; };
-		A9D7C1E61C2AE79E00F6814E /* YTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7C1E41C2AE79E00F6814E /* YTTabBarButton.m */; };
 		BAE4EACD1C3285A5004BC90B /* YTBaseMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EACC1C3285A5004BC90B /* YTBaseMemoViewController.m */; };
+		BAE4EAD01C32BA16004BC90B /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */; };
+		BAE4EAD31C32BB5F004BC90B /* YTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */; };
+		BAE4EAD61C32BBCE004BC90B /* YTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAD51C32BBCE004BC90B /* YTTabBar.m */; };
+		BAE4EADA1C32C345004BC90B /* YTShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAD91C32C345004BC90B /* YTShareViewController.m */; };
+		BAE4EADE1C32DDB4004BC90B /* YTHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EADD1C32DDB4004BC90B /* YTHelpViewController.m */; };
+		BAE4EAE51C32E127004BC90B /* YTOtherSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAE41C32E127004BC90B /* YTOtherSettingViewController.m */; };
+		BAE4EAE81C32E1D9004BC90B /* YTOtherSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE4EAE71C32E1D9004BC90B /* YTOtherSettingCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,8 +102,6 @@
 		A9AE30701C2F854800554B51 /* YTSelfInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSelfInfo.m; sourceTree = "<group>"; };
 		A9B82A9E1C2D298600B23E81 /* YTSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSettingGroup.h; sourceTree = "<group>"; };
 		A9B82A9F1C2D298600B23E81 /* YTSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSettingGroup.m; sourceTree = "<group>"; };
-		A9D117CC1C3024A900F83133 /* YTMottoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTMottoViewController.h; sourceTree = "<group>"; };
-		A9D117CD1C3024A900F83133 /* YTMottoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTMottoViewController.m; sourceTree = "<group>"; };
 		A9D117CF1C3025C300F83133 /* YTBaseSelfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBaseSelfInfoViewController.h; sourceTree = "<group>"; };
 		A9D117D01C3025C300F83133 /* YTBaseSelfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTBaseSelfInfoViewController.m; sourceTree = "<group>"; };
 		A9D7C19A1C2AE42D00F6814E /* IOS作业.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS作业.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,14 +122,22 @@
 		A9D7C1D11C2AE55100F6814E /* YTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTabBarController.m; sourceTree = "<group>"; };
 		A9D7C1D61C2AE60000F6814E /* YTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTNavigationController.h; sourceTree = "<group>"; };
 		A9D7C1D71C2AE60000F6814E /* YTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTNavigationController.m; sourceTree = "<group>"; };
-		A9D7C1DE1C2AE76900F6814E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "../../iOS大作业/iOS大作业/UIImage+Extension.h"; sourceTree = "<group>"; };
-		A9D7C1DF1C2AE76900F6814E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "../../iOS大作业/iOS大作业/UIImage+Extension.m"; sourceTree = "<group>"; };
-		A9D7C1E11C2AE79E00F6814E /* YTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTTabBar.h; path = "../../iOS大作业/iOS大作业/YTTabBar.h"; sourceTree = "<group>"; };
-		A9D7C1E21C2AE79E00F6814E /* YTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTTabBar.m; path = "../../iOS大作业/iOS大作业/YTTabBar.m"; sourceTree = "<group>"; };
-		A9D7C1E31C2AE79E00F6814E /* YTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTTabBarButton.h; path = "../../iOS大作业/iOS大作业/YTTabBarButton.h"; sourceTree = "<group>"; };
-		A9D7C1E41C2AE79E00F6814E /* YTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTTabBarButton.m; path = "../../iOS大作业/iOS大作业/YTTabBarButton.m"; sourceTree = "<group>"; };
 		BAE4EACB1C3285A5004BC90B /* YTBaseMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBaseMemoViewController.h; sourceTree = "<group>"; };
 		BAE4EACC1C3285A5004BC90B /* YTBaseMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTBaseMemoViewController.m; sourceTree = "<group>"; };
+		BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "IOS作业/UIImage+Extension.h"; sourceTree = "<group>"; };
+		BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "IOS作业/UIImage+Extension.m"; sourceTree = "<group>"; };
+		BAE4EAD11C32BB5F004BC90B /* YTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTabBarButton.h; sourceTree = "<group>"; };
+		BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTabBarButton.m; sourceTree = "<group>"; };
+		BAE4EAD41C32BBCE004BC90B /* YTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTabBar.h; sourceTree = "<group>"; };
+		BAE4EAD51C32BBCE004BC90B /* YTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTabBar.m; sourceTree = "<group>"; };
+		BAE4EAD81C32C345004BC90B /* YTShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTShareViewController.h; sourceTree = "<group>"; };
+		BAE4EAD91C32C345004BC90B /* YTShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTShareViewController.m; sourceTree = "<group>"; };
+		BAE4EADC1C32DDB4004BC90B /* YTHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTHelpViewController.h; sourceTree = "<group>"; };
+		BAE4EADD1C32DDB4004BC90B /* YTHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTHelpViewController.m; sourceTree = "<group>"; };
+		BAE4EAE31C32E127004BC90B /* YTOtherSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTOtherSettingViewController.h; sourceTree = "<group>"; };
+		BAE4EAE41C32E127004BC90B /* YTOtherSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTOtherSettingViewController.m; sourceTree = "<group>"; };
+		BAE4EAE61C32E1D9004BC90B /* YTOtherSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTOtherSettingCell.h; sourceTree = "<group>"; };
+		BAE4EAE71C32E1D9004BC90B /* YTOtherSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTOtherSettingCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +193,6 @@
 			children = (
 				A95D616E1C2CE4C000728637 /* YTSelfInfoViewController.h */,
 				A95D616F1C2CE4C000728637 /* YTSelfInfoViewController.m */,
-				A9D117CC1C3024A900F83133 /* YTMottoViewController.h */,
-				A9D117CD1C3024A900F83133 /* YTMottoViewController.m */,
 				A9D117CF1C3025C300F83133 /* YTBaseSelfInfoViewController.h */,
 				A9D117D01C3025C300F83133 /* YTBaseSelfInfoViewController.m */,
 			);
@@ -197,6 +204,8 @@
 			children = (
 				A95D617A1C2D0CA800728637 /* YTSettingCell.h */,
 				A95D617B1C2D0CA800728637 /* YTSettingCell.m */,
+				BAE4EAE61C32E1D9004BC90B /* YTOtherSettingCell.h */,
+				BAE4EAE71C32E1D9004BC90B /* YTOtherSettingCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -279,6 +288,9 @@
 		A998ED501C2BDC5D00CD7DA8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BAE4EADF1C32E0DD004BC90B /* OtherSetting */,
+				BAE4EADB1C32DD91004BC90B /* Help */,
+				BAE4EAD71C32C314004BC90B /* Share */,
 				A95D61751C2CEBA300728637 /* About */,
 				A95D616D1C2CE47000728637 /* SelfInfo */,
 				A95D616C1C2CE46100728637 /* Setting */,
@@ -326,6 +338,8 @@
 		A9D7C1911C2AE42D00F6814E = {
 			isa = PBXGroup;
 			children = (
+				BAE4EACE1C32BA16004BC90B /* UIImage+Extension.h */,
+				BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */,
 				A9D7C19C1C2AE42D00F6814E /* IOS作业 */,
 				A9D7C1B61C2AE42D00F6814E /* IOS作业Tests */,
 				A9D7C1C11C2AE42D00F6814E /* IOS作业UITests */,
@@ -399,8 +413,6 @@
 			isa = PBXGroup;
 			children = (
 				A95AE1551C2BB483008C4556 /* MBProgressHUD */,
-				A9D7C1DE1C2AE76900F6814E /* UIImage+Extension.h */,
-				A9D7C1DF1C2AE76900F6814E /* UIImage+Extension.m */,
 				A9D7C1A01C2AE42D00F6814E /* AppDelegate.h */,
 				A9D7C1A11C2AE42D00F6814E /* AppDelegate.m */,
 			);
@@ -430,12 +442,39 @@
 		A9D7C1DD1C2AE72600F6814E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A9D7C1E11C2AE79E00F6814E /* YTTabBar.h */,
-				A9D7C1E21C2AE79E00F6814E /* YTTabBar.m */,
-				A9D7C1E31C2AE79E00F6814E /* YTTabBarButton.h */,
-				A9D7C1E41C2AE79E00F6814E /* YTTabBarButton.m */,
+				BAE4EAD41C32BBCE004BC90B /* YTTabBar.h */,
+				BAE4EAD51C32BBCE004BC90B /* YTTabBar.m */,
+				BAE4EAD11C32BB5F004BC90B /* YTTabBarButton.h */,
+				BAE4EAD21C32BB5F004BC90B /* YTTabBarButton.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BAE4EAD71C32C314004BC90B /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4EAD81C32C345004BC90B /* YTShareViewController.h */,
+				BAE4EAD91C32C345004BC90B /* YTShareViewController.m */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		BAE4EADB1C32DD91004BC90B /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4EADC1C32DDB4004BC90B /* YTHelpViewController.h */,
+				BAE4EADD1C32DDB4004BC90B /* YTHelpViewController.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		BAE4EADF1C32E0DD004BC90B /* OtherSetting */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4EAE31C32E127004BC90B /* YTOtherSettingViewController.h */,
+				BAE4EAE41C32E127004BC90B /* YTOtherSettingViewController.m */,
+			);
+			name = OtherSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,30 +611,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D7C1E61C2AE79E00F6814E /* YTTabBarButton.m in Sources */,
 				A99EFA421C2BA87B00FB3BC2 /* YTLoginViewController.m in Sources */,
+				BAE4EADA1C32C345004BC90B /* YTShareViewController.m in Sources */,
+				BAE4EAD61C32BBCE004BC90B /* YTTabBar.m in Sources */,
 				A9D117D11C3025C300F83133 /* YTBaseSelfInfoViewController.m in Sources */,
+				BAE4EAD31C32BB5F004BC90B /* YTTabBarButton.m in Sources */,
 				A98CF8351C30C91000671409 /* YTMemoViewController.m in Sources */,
 				A9A2941F1C30E1E30087ECA3 /* YTMemo.m in Sources */,
 				A95D61791C2CEBD200728637 /* YTAboutViewController.m in Sources */,
-				A9D7C1E01C2AE76900F6814E /* UIImage+Extension.m in Sources */,
 				A9D7C1D21C2AE55100F6814E /* YTTabBarController.m in Sources */,
+				BAE4EAE51C32E127004BC90B /* YTOtherSettingViewController.m in Sources */,
 				A95D617C1C2D0CA800728637 /* YTSettingCell.m in Sources */,
+				BAE4EADE1C32DDB4004BC90B /* YTHelpViewController.m in Sources */,
 				A95AE1541C2BB47A008C4556 /* MBProgressHUD.m in Sources */,
 				A95D61701C2CE4C000728637 /* YTSelfInfoViewController.m in Sources */,
 				A9D7C1A21C2AE42D00F6814E /* AppDelegate.m in Sources */,
-				A9D117CE1C3024A900F83133 /* YTMottoViewController.m in Sources */,
 				A9D7C19F1C2AE42D00F6814E /* main.m in Sources */,
 				A95D61731C2CE8ED00728637 /* YTBaseViewController.m in Sources */,
 				A95AE1521C2BB47A008C4556 /* MBProgressHUD+MJ.m in Sources */,
+				BAE4EAD01C32BA16004BC90B /* UIImage+Extension.m in Sources */,
 				A99EFA3F1C2BA66300FB3BC2 /* YTSignUpViewController.m in Sources */,
+				BAE4EAE81C32E1D9004BC90B /* YTOtherSettingCell.m in Sources */,
 				A9A2942B1C30E3DC0087ECA3 /* YTEditViewController.m in Sources */,
 				A9B82AA01C2D298600B23E81 /* YTSettingGroup.m in Sources */,
 				A9A294241C30E1FA0087ECA3 /* YTMemoCell.m in Sources */,
 				A9A2942A1C30E3DC0087ECA3 /* YTAddViewController.m in Sources */,
 				A95D61801C2D0D0200728637 /* YTSettingItem.m in Sources */,
 				A9A294251C30E1FA0087ECA3 /* YTMemoFrame.m in Sources */,
-				A9D7C1E51C2AE79E00F6814E /* YTTabBar.m in Sources */,
 				A998ED531C2BDCA400CD7DA8 /* YTSettingViewController.m in Sources */,
 				A9D7C1D81C2AE60000F6814E /* YTNavigationController.m in Sources */,
 				BAE4EACD1C3285A5004BC90B /* YTBaseMemoViewController.m in Sources */,

@@ -12,15 +12,15 @@
 #import "UIImage+Extension.h"
 #import "YTSettingItem.h"
 #import "YTSettingGroup.h"
-
 #import "YTLoginViewController.h"
-
 #import "YTSelfInfoViewController.h"
 #import "YTAboutViewController.h"
-
 #import "YTSelfInfo.h"
 #import "YTBaseSelfInfoViewController.h"
-#import "YTMottoViewController.h"
+#import "YTShareViewController.h"
+#import "YTAboutViewController.h"
+#import "YTHelpViewController.h"
+#import "YTOtherSettingViewController.h"
 @interface YTSettingViewController()
 @property (nonatomic, strong) NSMutableArray* info;
 @property (weak, nonatomic) IBOutlet UIButton *LogoutBtn;
@@ -44,17 +44,18 @@
 
 - (void)setupGroup2
 {
-    YTSettingItem *other = [YTSettingItem itemWithTitle:@"其他设置" destVcClass:nil];
-    
+    YTSettingItem *share = [YTSettingItem itemWithIcon:@"MoreShare" title:@"分享" destVcClass:[YTShareViewController class]];
+    YTSettingItem *help = [YTSettingItem itemWithIcon:@"MoreHelp" title:@"帮助" destVcClass:[YTHelpViewController class]];
+    YTSettingItem *about = [YTSettingItem itemWithIcon:@"MoreAbout" title:@"关于" destVcClass:[YTAboutViewController class]];
     YTSettingGroup *group = [[YTSettingGroup alloc] init];
-    group.items = @[other];
+    group.items = @[share, help, about];
     [self.data addObject:group];
 
 }
 
 - (void)setupGroup3
 {
-    YTSettingItem *share = [YTSettingItem itemWithTitle:@"分享" destVcClass:[YTSelfInfoViewController class]];
+    YTSettingItem *other = [YTSettingItem itemWithTitle:@"其他设置" destVcClass:[YTOtherSettingViewController class]];
     YTSettingItem *check = [YTSettingItem itemWithTitle:@"检查新版本" destVcClass:nil];
     check.option = ^{
         // 弹框提示
@@ -70,7 +71,7 @@
         });
     };
     YTSettingGroup *group = [[YTSettingGroup alloc] init];
-    group.items = @[share, check];
+    group.items = @[other, check];
     [self.data addObject:group];
     
 }

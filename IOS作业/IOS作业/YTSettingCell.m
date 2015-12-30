@@ -10,7 +10,7 @@
 #import "YTSettingItem.h"
 
 #import "YTSelfInfoViewController.h"
-#import "YTMottoViewController.h"
+
 @interface YTSettingCell()
 
 /**
@@ -22,7 +22,7 @@
  */
 @property (nonatomic, strong) UILabel *labelView;
 
-@property (nonatomic, weak) UIView *divider;
+
 @end
 
 @implementation YTSettingCell

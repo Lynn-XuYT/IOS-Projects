@@ -24,6 +24,10 @@ typedef void(^YTSettingItemOption)();
  */
 @property (nonatomic, copy) NSString *subtitle;
 /**
+ *  开关
+ */
+@property (nonatomic, assign) BOOL swch;
+/**
  *  点击cell需要做的事情
  */
 @property (nonatomic, copy) YTSettingItemOption option;
