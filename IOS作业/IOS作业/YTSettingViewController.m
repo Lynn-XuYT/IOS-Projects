@@ -2,25 +2,27 @@
 //  YTSettingViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/24.
+//  Created by Lynn on 15/12/24.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
 
 #import "YTSettingViewController.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+YT.h"
 #import "UIImage+Extension.h"
 #import "YTSettingItem.h"
 #import "YTSettingGroup.h"
 #import "YTLoginViewController.h"
 #import "YTSelfInfoViewController.h"
 #import "YTAboutViewController.h"
-#import "YTSelfInfo.h"
+
 #import "YTBaseSelfInfoViewController.h"
 #import "YTShareViewController.h"
 #import "YTAboutViewController.h"
 #import "YTHelpViewController.h"
 #import "YTOtherSettingViewController.h"
+
+
 @interface YTSettingViewController()
 @property (nonatomic, strong) NSMutableArray* info;
 @property (weak, nonatomic) IBOutlet UIButton *LogoutBtn;
@@ -35,7 +37,10 @@
  */
 - (void)setupGroup1
 {
-    YTSettingItem *me = [YTSettingItem itemWithIcon:@"me" title:@"XXXX" subtitle:@"我的座右铭" destVcClass:[YTSelfInfoViewController class]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString* title = [defaults objectForKey:YTTITLE];
+    NSString* subTitle = [defaults objectForKey:YTSUBTITLE];
+    YTSettingItem *me = [YTSettingItem itemWithIcon:@"me" title:title subtitle:subTitle destVcClass:[YTSelfInfoViewController class]];
     
     YTSettingGroup *group = [[YTSettingGroup alloc] init];
     group.items = @[me];
@@ -86,9 +91,6 @@
     [self setupGroup2];
     [self setupGroup3];
 }
-
-
-
 
 #pragma mark 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

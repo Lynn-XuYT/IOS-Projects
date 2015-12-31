@@ -2,7 +2,7 @@
 //  YTBaseSelfInfoViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/27.
+//  Created by Lynn on 15/12/27.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
@@ -18,20 +18,31 @@
 @end
 
 @implementation YTBaseSelfInfoViewController
-
 - (void)loadView
 {
-    
     [super loadView];
-    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(leftButtonClick)];
+    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonClick)];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
-- (void)leftButtonClick
+- (void)rightButtonClick
 {
-    self.titleFeild.enabled = YES;
-    self.subTitleView.editable = YES;
-    [self.titleFeild becomeFirstResponder];
+
+    
+    if (!self.titleFeild.enabled)
+    {
+        self.navigationItem.rightBarButtonItem.title = @"取消";
+        self.titleFeild.enabled = YES;
+        self.subTitleView.editable = YES;
+        [self.titleFeild becomeFirstResponder];
+    }
+    else
+    {
+        self.navigationItem.rightBarButtonItem.title = @"编辑";
+        self.titleFeild.enabled = NO;
+        self.subTitleView.editable = NO;
+        [self.view endEditing:YES];
+    }
 }
 
 
@@ -49,7 +60,7 @@
     [self addEventView];
     self.subTitle.text = @"我的座右铭";
 
-    // 添加确定按钮
+    // 添加完成按钮
     [self addFinishBtn];
     self.subTitleView.text = self.item.subtitle;
     self.subTitleView.editable = NO;
@@ -61,21 +72,16 @@
     {
         self.item.title = self.titleFeild.text;
         self.item.subtitle = self.subTitleView.text;
+        
+        // 存数数据
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:self.item.title forKey:YTTITLE];
+        [defaults setObject:self.item.subtitle forKey:YTSUBTITLE];
+        [defaults synchronize];
+        
         [self.delegate selfInfoViewController:self didSaveInfo:self.item];
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

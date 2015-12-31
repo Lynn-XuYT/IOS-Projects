@@ -7,12 +7,13 @@
 //
 
 #import "YTMoreFunctionViewController.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+YT.h"
 #import "UIImage+Extension.h"
 #import "YTSettingItem.h"
 #import "YTSettingGroup.h"
 #import "YTDrawPicViewController.h"
 #import "YTOtherViewController.h"
+#import "YTLocateViewController.h"
 @interface YTMoreFunctionViewController ()
 
 @end
@@ -27,7 +28,7 @@
 - (void)setupGroup1
 {
     YTSettingItem *drawPic = [YTSettingItem itemWithIcon:@"画图板" title:@"画图板" destVcClass:[YTDrawPicViewController class]];
-    YTSettingItem *loc = [YTSettingItem itemWithIcon:@"我的位置" title:@"我的位置" destVcClass:nil];
+    YTSettingItem *loc = [YTSettingItem itemWithIcon:@"我的位置" title:@"我的位置" destVcClass:[YTLocateViewController class]];
 
     YTSettingGroup *group = [[YTSettingGroup alloc] init];
     group.items = @[drawPic, loc];

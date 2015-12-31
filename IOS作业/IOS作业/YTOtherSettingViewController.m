@@ -24,20 +24,16 @@
     group.items = @[a1, a2];
     [self.data addObject:group];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupGroup];
 }
 
 #pragma mark - Table view data source
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-
     YTOtherSettingCell *cell = [YTOtherSettingCell cellWithTableView:tableView];
     YTSettingGroup *group = self.data[indexPath.section];
-    
     YTSettingItem* item = group.items[indexPath.row];
     cell.item = item;
 

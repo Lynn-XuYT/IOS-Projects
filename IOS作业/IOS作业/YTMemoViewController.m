@@ -2,8 +2,8 @@
 //  YTMemoViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/28.
-//  Copyright © 2015年 xu. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 #import "YTMemoViewController.h"
@@ -25,10 +25,6 @@
 {
     if (_memoFrames == nil) {
         _memoFrames = [NSKeyedUnarchiver unarchiveObjectWithFile:YTMemoFilepath];
-        NSLog(@"%@",_memoFrames[0]);
-        YTMemoFrame *frame = _memoFrames[0];
-        NSLog(@"%@",frame.title);
-        
         if (_memoFrames == nil) {
             _memoFrames = [NSMutableArray array];
         }
@@ -104,10 +100,6 @@
 - (void)addViewController:(YTAddViewController *)addMemoVc didSaveInfo:(YTMemoFrame *)memoFrame
 {
     [self.memoFrames addObject:memoFrame];
-    
-    NSLog(@"addViewController ==== %@", memoFrame.memo.title);
-    YTMemoFrame *frame = [self.memoFrames lastObject];
-    NSLog(@"++++++++++++%@",frame.title);
     // 归档
     [NSKeyedArchiver archiveRootObject:self.memoFrames toFile:YTMemoFilepath];
     [self.tableView reloadData];

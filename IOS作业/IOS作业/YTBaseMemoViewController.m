@@ -31,7 +31,7 @@
     // 添加事件的View
     [self addEventView];
     
-    // 添加确定按钮
+    // 添加完成按钮
     [self addFinishBtn];
 }
 
@@ -47,12 +47,10 @@
     UIView* view = [[UIView alloc]init];
     view.layer.cornerRadius = 10;
     view.frame = CGRectMake(20, 92, 250, 30);
-//    view.backgroundColor = [UIColor greenColor];
     [self.view addSubview:view];
     
     self.titleLabel = [[UILabel alloc]init];
     self.titleLabel.frame = CGRectMake(0, 0, 51, 30);
-//    label.backgroundColor = [UIColor whiteColor];
     self.titleLabel.text = @"主题:";
     [view addSubview:self.titleLabel];
     
@@ -129,7 +127,7 @@
     [view addSubview:self.subTitleView];
 }
 /**
- *  添加确定按钮
+ *  添加完成按钮
  */
 - (void)addFinishBtn
 {
@@ -138,11 +136,15 @@
     self.btn.layer.cornerRadius = 10;
     self.btn.enabled = NO;
     [self.btn setBackgroundImage:[UIImage resizableImage:@"navBg"] forState:UIControlStateNormal];
-    [self.btn setTitle:@"确定" forState:UIControlStateNormal];
+    [self.btn setBackgroundImage:[UIImage resizableImage:@"bg"] forState:UIControlStateHighlighted];
+    [self.btn setTitle:@"完成" forState:UIControlStateNormal];
     [self.btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.btn];
 }
-
+- (void)btnClicked
+{
+    
+}
 - (void)textChanged
 {
     self.btn.enabled = (self.titleFeild.text.length && self.subTitleView.text.length);

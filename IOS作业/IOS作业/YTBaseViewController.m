@@ -2,7 +2,7 @@
 //  YTBaseViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/25.
+//  Created by Lynn on 15/12/25.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 #import "YTOtherSettingViewController.h"
 #import "YTDrawPicViewController.h"
 #import "YTOtherViewController.h"
+#import "YTLocateViewController.h"
 @interface YTBaseViewController ()<YTBaseSelfInfoViewControllerDelegate>
 
 @end
@@ -72,8 +73,6 @@
     // 给cell传递模型数据
     YTSettingGroup *group = self.data[indexPath.section];
     cell.item = group.items[indexPath.row];
-    
-    
     return cell;
 }
 
@@ -107,8 +106,7 @@
             selfInfoVC.title = @"设置昵称";
             selfInfoVC.item.subtitle = item.subtitle;
             [self.navigationController pushViewController:selfInfoVC animated:YES];
-        }
-        else if ( [vc isKindOfClass: [YTShareViewController class]])
+        }else if ( [vc isKindOfClass: [YTShareViewController class]])
         {
             YTShareViewController* shareVC = vc;
             shareVC.title = item.title;
@@ -119,8 +117,7 @@
             YTHelpViewController* helpVC = vc;
             helpVC.title = item.title;
             [self.navigationController pushViewController:helpVC animated:YES];
-        }
-        else if ( [vc isKindOfClass: [YTAboutViewController class]])
+        }else if ( [vc isKindOfClass: [YTAboutViewController class]])
         {
             YTAboutViewController* aboutVC = vc;
             aboutVC.title = item.title;
@@ -141,17 +138,17 @@
             YTOtherViewController* otherVC = vc;
             otherVC.title = item.title;
             [self.navigationController pushViewController:otherVC animated:YES];
+        }else if ([vc isKindOfClass:[YTLocateViewController class]])
+        {
+            YTLocateViewController* locVC = vc;
+            locVC.title = item.title;
+            [self.navigationController pushViewController:locVC animated:YES];
         }
-        
-        
     }
-    
 }
 
 - (void)selfInfoViewController:(YTBaseSelfInfoViewController *)selfInfoVc didSaveInfo:(YTSettingItem *)selfInfo
 {
-    
     [self.tableView reloadData];
-    
 }
 @end

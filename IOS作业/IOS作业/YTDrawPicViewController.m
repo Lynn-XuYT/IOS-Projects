@@ -9,7 +9,7 @@
 #import "YTDrawPicViewController.h"
 #import "UIImage+Extension.h"
 #import "YTDrawPicView.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+YT.h"
 
 @interface YTDrawPicViewController ()
 @property (strong, nonatomic) YTDrawPicView *drawView;

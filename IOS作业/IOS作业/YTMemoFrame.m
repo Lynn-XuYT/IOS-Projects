@@ -1,9 +1,9 @@
 //
-//  MJStatusFrame.m
-//  04-微博
+//  YTMemoFrame.m
+//  IOS作业
 //
-//  Created by apple on 14-4-1.
-//  Copyright (c) 2014年 itcast. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 

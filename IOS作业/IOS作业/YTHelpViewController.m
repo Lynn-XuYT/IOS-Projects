@@ -23,15 +23,14 @@
     [self.view addSubview:webView];
     
     // 数据
-    YTSettingItem *mark = [YTSettingItem itemWithTitle:@"评分支持" destVcClass:nil];
-    mark.option = ^{
-        NSString* appid = @"725296055";
-        
-        NSString *str = [NSString stringWithFormat:@"itm-apps://itunes.apple.com/cn/app/id%@?mt=8",appid];
-        
-        NSURL *url = [NSURL URLWithString:str];
-        [[UIApplication sharedApplication] openURL:url];
-    };
+//    YTSettingItem *mark = [YTSettingItem itemWithTitle:@"评分支持" destVcClass:nil];
+//    mark.option = ^{
+//        NSString* appid = @"725296055";
+//        NSString *str = [NSString stringWithFormat:@"itm-apps://itunes.apple.com/cn/app/id%@?mt=8",appid];
+//        
+//        NSURL *url = [NSURL URLWithString:str];
+//        [[UIApplication sharedApplication] openURL:url];
+//    };
     YTSettingItem *call = [YTSettingItem itemWithTitle:@"技术支持电话" destVcClass:nil];
     call.subtitle = @"18842608965";
     call.option = ^{
@@ -41,7 +40,7 @@
     };
     
     YTSettingGroup *group = [[YTSettingGroup alloc] init];
-    group.items = @[mark, call];
+    group.items = @[call];
     [self.data addObject:group];
 }
 

@@ -2,7 +2,7 @@
 //  YTPch.pch
 //  IOS作业
 //
-//  Created by zhu on 15/12/25.
+//  Created by Lynn on 15/12/25.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
@@ -16,6 +16,8 @@
 #define YTAccountKey @"account_login"
 #define YTRmbPwdKey @"rmb_pwd"
 #define YTAutoLoginKey @"auto_login"
+#define YTTITLE @"selftitle"
+#define YTSUBTITLE @"selfsubtitle"
 
 // 标题字体
 #define YTTitleFont [UIFont systemFontOfSize:17]
@@ -24,7 +26,8 @@
 
 // Memo文件路径
 #define YTMemoFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"memo.data"]
-
+// contacts文件路径
+#define YTContactsFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"contacts.data"]
 // user文件路径
 #define YTUserFilePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"user.sqlite"]
 #endif /* YTPch_pch */

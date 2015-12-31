@@ -1,9 +1,9 @@
 //
-//  MJAddViewController.m
+//  YTAddViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/28.
-//  Copyright © 2015年 xu. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 #import "YTAddViewController.h"
@@ -18,6 +18,12 @@
 @end
 
 @implementation YTAddViewController
+- (void)loadView
+{
+    [super loadView];
+    self.navigationItem.title = @"添加Memo";
+    self.navigationItem.leftBarButtonItem.title = @"返回";
+}
 
 - (void)viewDidLoad {
     
@@ -36,7 +42,7 @@
 }
 
 /**
- *  点击确定按钮
+ *  点击完成按钮
  */
 - (void)btnClicked
 {

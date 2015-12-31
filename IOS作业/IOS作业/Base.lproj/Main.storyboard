@@ -147,20 +147,31 @@
             </objects>
             <point key="canvasLocation" x="-3464.5" y="104.5"/>
         </scene>
-        <!--更多功能-->
+        <!--我的联系人-->
         <scene sceneID="Z8N-09-bdU">
             <objects>
-                <tableViewController id="nQz-1s-ffn" customClass="YTMoreFunctionViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="SUV-6e-Chp">
+                <tableViewController id="nQz-1s-ffn" customClass="YTContactsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SUV-6e-Chp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
                             <outlet property="dataSource" destination="nQz-1s-ffn" id="5tU-yJ-SFI"/>
                             <outlet property="delegate" destination="nQz-1s-ffn" id="aOV-fe-mBd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="更多功能" id="pag-sJ-ZP5"/>
+                    <navigationItem key="navigationItem" title="我的联系人" id="pag-sJ-ZP5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="eKE-VM-WbD">
+                            <connections>
+                                <action selector="delete:" destination="nQz-1s-ffn" id="64x-0R-wvc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gJ9-ga-qtu">
+                            <connections>
+                                <action selector="addContact:" destination="nQz-1s-ffn" id="BvK-oV-y7U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRM-z7-Uhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,20 +335,20 @@
             </objects>
             <point key="canvasLocation" x="-2877.5" y="679.5"/>
         </scene>
-        <!--我的联系人-->
+        <!--更多功能-->
         <scene sceneID="rcA-V8-pvU">
             <objects>
-                <tableViewController id="ntF-qL-dY7" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QoN-hU-J4L">
+                <tableViewController id="ntF-qL-dY7" customClass="YTMoreFunctionViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="QoN-hU-J4L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <connections>
                             <outlet property="dataSource" destination="ntF-qL-dY7" id="iE9-1u-J8a"/>
                             <outlet property="delegate" destination="ntF-qL-dY7" id="yH8-r6-od6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的联系人" id="1NA-aH-BAV"/>
+                    <navigationItem key="navigationItem" title="更多功能" id="1NA-aH-BAV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jm5-kf-O5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -423,6 +434,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jle-1h-Q0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2400.5" y="-1631.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AhZ-5B-Ypa">
+            <objects>
+                <viewController id="2cg-GW-5MA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="anz-W5-bvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hQ0-KI-eEA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z6X-qQ-mnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-GG-RdE">
+                                <rect key="frame" x="50" y="160" width="275" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-eq-rZA">
+                                        <rect key="frame" x="60" y="0.0" width="215" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="490-6E-ler">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9466827552" green="0.25557713459999998" blue="0.18541160239999999" alpha="0.96739250889999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-dc-Y5V">
+                                <rect key="frame" x="50" y="260" width="275" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyG-zo-IDK">
+                                        <rect key="frame" x="60" y="0.0" width="215" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFA-sz-mZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9466827552" green="0.25557713459999998" blue="0.18541160239999999" alpha="0.96739250889999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-PJ-mKt">
+                                <rect key="frame" x="129" y="389" width="116" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48221794019999997" green="1" blue="0.21606319060000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeS-I7-mjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017.5" y="-1918.5"/>
         </scene>
     </scenes>
 </document>

@@ -2,12 +2,12 @@
 //  YTSignUpViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/24.
+//  Created by Lynn on 15/12/24.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
 #import "YTSignUpViewController.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+YT.h"
 #import "YTUser.h"
 #import <sqlite3.h>
 @interface YTSignUpViewController()
@@ -28,6 +28,9 @@
 
 - (void)viewDidLoad
 {
+    UIImage* bg = [UIImage imageNamed:@"bg_login"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:bg];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledChanged) name:UITextFieldTextDidChangeNotification object:self.accountField];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledChanged) name:UITextFieldTextDidChangeNotification object:self.pwdField1];
@@ -67,8 +70,6 @@
     YTUser *user = [[YTUser alloc] init];
     user.account = self.accountField.text;
     user.userPWD = self.pwdField1.text;
-    
-    NSLog(@"%@++++%@", user.account, user.userPWD);
     
     [self saveUser:user];
     
@@ -132,17 +133,15 @@
         result = sqlite3_prepare_v2(_database, sql.UTF8String, -1, &stmt, NULL);
         if (result == SQLITE_OK) {
             NSLog(@"OK");
-            // 设置占位符内容
-            //sqlite3_bind_text(stmt, 1,str.UTF8String, -1, NULL);
             
-            while (sqlite3_step(stmt) == SQLITE_ROW) {
-                int _id = sqlite3_column_int(stmt, 0);
-                char *_name = (char *)sqlite3_column_text(stmt, 1);
-                NSString *name = [NSString stringWithUTF8String:_name];
-                char *_name1 = (char *)sqlite3_column_text(stmt, 1);
-                NSString *name1 = [NSString stringWithUTF8String:_name1];
-                NSLog(@"id=%i, name=%@, age=%@", _id, name, name1);
-            }
+//            while (sqlite3_step(stmt) == SQLITE_ROW) {
+//                int _id = sqlite3_column_int(stmt, 0);
+//                char *_name = (char *)sqlite3_column_text(stmt, 1);
+//                NSString *name = [NSString stringWithUTF8String:_name];
+//                char *_name1 = (char *)sqlite3_column_text(stmt, 1);
+//                NSString *name1 = [NSString stringWithUTF8String:_name1];
+//                NSLog(@"id=%i, name=%@, age=%@", _id, name, name1);
+//            }
 
         }
         else{

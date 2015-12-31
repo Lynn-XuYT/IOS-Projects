@@ -2,8 +2,8 @@
 //  YTSettingCell.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/25.
-//  Copyright © 2015年 xu. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 #import "YTSettingCell.h"
@@ -110,26 +110,14 @@
     self.selectedBackgroundView = selectedBg;
 }
 
-
 + (instancetype)cellWithTableView:(UITableView *)tableView
 {
-    //static NSString *ID = @"setting";
-    //YTSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:ID]; reuseIdentifier:ID
     YTSettingCell* cell = [[YTSettingCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
-//    if (cell == nil) {
-//        cell = [[YTSettingCell alloc] initWithStyle:UITableViewCellStyleValue1];
-//    }
     return cell;
-}
-
-- (void)awakeFromNib {
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

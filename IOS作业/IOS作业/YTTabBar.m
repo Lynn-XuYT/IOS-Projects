@@ -2,7 +2,7 @@
 //  YTTabBar.m
 //  iOS大作业
 //
-//  Created by zhu on 15/12/23.
+//  Created by Lynn on 15/12/23.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
@@ -61,7 +61,7 @@
 {
     [super layoutSubviews];
     
-    NSLog(@"%f---%f",self.frame.size.width,self.frame.size.height);
+    //NSLog(@"%f---%f",self.frame.size.width,self.frame.size.height);
     int count = (int)self.subviews.count;
     for (int i = 0; i<count; i++) {
         YTTabBarButton* button = self.subviews[i];

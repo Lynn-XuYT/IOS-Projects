@@ -2,8 +2,8 @@
 //  YTMemo.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/28.
-//  Copyright © 2015年 xu. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 #import "YTMemo.h"

@@ -28,7 +28,7 @@
 - (void)addEventView;
 
 /**
- *  添加确定按钮
+ *  添加完成按钮
  */
 - (void)addFinishBtn;
 

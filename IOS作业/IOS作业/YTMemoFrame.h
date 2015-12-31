@@ -1,11 +1,10 @@
 //
-//  MJStatusFrame.h
-//  04-微博
+//  YTStatusFrame.h
+//  IOS作业
 //
-//  Created by apple on 14-4-1.
-//  Copyright (c) 2014年 itcast. All rights reserved.
-//  这个模型对象专门用来存放cell内部所有的子控件的frame数据  + cell的高度
-// 一个cell拥有一个MJStatusFrame模型
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
+//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

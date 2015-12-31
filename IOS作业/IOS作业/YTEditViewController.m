@@ -1,9 +1,9 @@
 //
-//  MJEditViewController.m
+//  YTEditViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/28.
-//  Copyright © 2015年 xu. All rights reserved.
+//  Created by Lynn on 15/12/30.
+//  Copyright © 2015年 xu. All rights
 //
 
 #import "YTEditViewController.h"
@@ -19,11 +19,13 @@
 - (void)loadView
 {
     [super loadView];
-    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftButtonClick)];
+    self.navigationItem.title = @"编辑Memo";
+    self.navigationItem.leftBarButtonItem.title = @"返回";
+    UIBarButtonItem* rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonClick)];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
-- (void)leftButtonClick
+- (void)rightButtonClick
 {
     if (!self.titleFeild.enabled)
     {

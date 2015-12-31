@@ -2,12 +2,12 @@
 //  YTLoginViewController.m
 //  IOS作业
 //
-//  Created by zhu on 15/12/24.
+//  Created by Lynn on 15/12/24.
 //  Copyright © 2015年 xu. All rights reserved.
 //
 
 #import "YTLoginViewController.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+YT.h"
 #import <sqlite3.h>
 #import "YTUser.h"
 
@@ -92,7 +92,7 @@
 
 - (IBAction)login:(UIButton *)sender {
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     if (![self queryUser:self.accountView.text]) {
         [MBProgressHUD showError:@"账号错误" toView:self.view];
         return;
@@ -102,6 +102,7 @@
         return;
     }
     // 存数数据
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setBool:self.rmbPWDSwitch.isOn forKey:YTRmbPwdKey];
     [defaults setBool:self.autoLoginSwitch.isOn forKey:YTAutoLoginKey];
     
