@@ -13,6 +13,7 @@
 
 @interface YTDrawPicViewController ()
 @property (strong, nonatomic) YTDrawPicView *drawView;
+@property (strong, nonatomic) UISlider *lineWSlider;
 @end
 
 @implementation YTDrawPicViewController
@@ -23,9 +24,9 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage resizableImage:@"bg"]];
     
     CGFloat viewX = 20;
-    CGFloat viewY = 95;
+    CGFloat viewY = 75;
     CGFloat viewW = 335;
-    CGFloat viewH = 520;
+    CGFloat viewH = 580;
     
     UIView *view = [[UIView alloc]init];
     view.frame = CGRectMake(viewX, viewY, viewW, viewH);
@@ -70,13 +71,96 @@
     [subview addSubview:saveBtn];
     
     _drawView = [[YTDrawPicView alloc]init];
-    _drawView.frame = CGRectMake(padding, subviewH + padding + padding, subviewW, viewH - subviewH-padding*3);
+    _drawView.frame = CGRectMake(padding, subviewH + padding + padding, subviewW, 470 - subviewH);
     _drawView.backgroundColor = [UIColor whiteColor];
     _drawView.layer.cornerRadius = 10;
     _drawView.clipsToBounds = YES;
     [view addSubview:_drawView];
+    
+    UIView *toolView = [[UIView alloc]init];
+    toolView.frame = CGRectMake(padding, 500, subviewW, 70);
+    toolView.backgroundColor = [UIColor colorWithPatternImage:[UIImage resizableImage:@"bg"]];
+    toolView.layer.cornerRadius = 5;
+    toolView.clipsToBounds = YES;
+    [view addSubview:toolView];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 0, 55, 30);
+    label.text = @"画笔大小";
+    label.font = [UIFont systemFontOfSize:13];
+    label.textColor = [UIColor blackColor];
+    [toolView addSubview:label];
+    
+    _lineWSlider = [[UISlider alloc] init];
+    _lineWSlider.value = 5;
+    _lineWSlider.minimumValue = 1;
+    _lineWSlider.maximumValue = 10;
+    _lineWSlider.minimumTrackTintColor = [UIColor colorWithRed:51/255 green:255/255 blue:255/255 alpha:1];
+    _lineWSlider.thumbTintColor = [UIColor colorWithRed:51/255 green:255/255 blue:255/255 alpha:1];
+    _lineWSlider.frame = CGRectMake(60, 0, 250, 30);
+    [_lineWSlider addTarget:self action:@selector(sliderValueChanged) forControlEvents:UIControlEventValueChanged];
+    [_lineWSlider setValue:5];
+    [toolView addSubview:_lineWSlider];
+    self.drawView.lineWidth = self.lineWSlider.value;
+    
+    
+    UILabel *label1 = [[UILabel alloc] init];
+    label1.frame = CGRectMake(0, 35, 55, 30);
+    label1.text = @"画笔颜色";
+    label1.font = [UIFont systemFontOfSize:13];
+    label1.textColor = [UIColor blackColor];
+    [toolView addSubview:label1];
+    
+    // 黑色
+    UIButton *blackBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    blackBtn.frame = CGRectMake(65, 40, 40, 20);
+    blackBtn.backgroundColor = [UIColor blackColor];
+    NSLog(@"===%p",blackBtn);
+    [blackBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [toolView addSubview:blackBtn];
+    self.drawView.lineColor = blackBtn.backgroundColor;
+    
+    // 红色
+    UIButton *redBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    redBtn.frame = CGRectMake(115, 40, 40, 20);
+    redBtn.backgroundColor = [UIColor redColor];
+    [redBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [toolView addSubview:redBtn];
+
+    // 绿色
+    UIButton *greenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    greenBtn.frame = CGRectMake(165, 40, 40, 20);
+    greenBtn.backgroundColor = [UIColor greenColor];
+    [greenBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [toolView addSubview:greenBtn];
+    
+    // 蓝色
+    UIButton *blueBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    blueBtn.frame = CGRectMake(215, 40, 40, 20);
+    blueBtn.backgroundColor = [UIColor blueColor];
+    [blueBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [toolView addSubview:blueBtn];
+    
+    // 黄色
+    UIButton *yellowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    yellowBtn.frame = CGRectMake(265, 40, 40, 20);
+    yellowBtn.backgroundColor = [UIColor yellowColor];
+    [yellowBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [toolView addSubview:yellowBtn];
 }
 
+- (void)colorBtnClicked:(UIButton *)btn
+{
+    
+    self.drawView.lineColor = btn.backgroundColor;
+    NSLog(@"colorBtnClicked====%p",btn.backgroundColor);
+}
+
+- (void)sliderValueChanged
+{
+    NSLog(@"%f",self.lineWSlider.value);
+    self.drawView.lineWidth = self.lineWSlider.value;
+}
 - (void)backBtnClicked
 {
     [self.drawView back];

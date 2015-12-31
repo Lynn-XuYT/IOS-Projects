@@ -9,10 +9,15 @@
 #import "YTDrawPicView.h"
 @interface YTDrawPicView()
 @property (nonatomic, strong) NSMutableArray *paths;
+
 @end
 
 @implementation YTDrawPicView
 
+- (void)setLineWidth:(CGFloat)lineWidth
+{
+    _lineWidth = lineWidth;
+}
 - (NSMutableArray *)paths
 {
     if (_paths == nil) {
@@ -40,11 +45,14 @@
     UITouch *touch = [touches anyObject];
     CGPoint startPos = [touch locationInView:touch.view];
     
+    NSLog(@"touchesBegan=====%p",self.lineColor);
+    
     // 2.创建一个新的路径
     UIBezierPath *currenPath = [UIBezierPath bezierPath];
     currenPath.lineCapStyle = kCGLineCapRound;
     currenPath.lineJoinStyle = kCGLineJoinRound;
-    
+    currenPath.lineWidth = self.lineWidth;
+
     // 设置起点
     [currenPath moveToPoint:startPos];
     
@@ -74,10 +82,10 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    [[UIColor redColor] set];
+    
     
     for (UIBezierPath *path in self.paths) {
-        path.lineWidth = 10;
+        [self.lineColor set];
         [path stroke];
     }
 }

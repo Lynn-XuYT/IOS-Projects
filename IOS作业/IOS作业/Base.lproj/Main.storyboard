@@ -324,10 +324,10 @@
             </objects>
             <point key="canvasLocation" x="-2877.5" y="679.5"/>
         </scene>
-        <!--More Function View Controller-->
+        <!--我的联系人-->
         <scene sceneID="rcA-V8-pvU">
             <objects>
-                <tableViewController id="ntF-qL-dY7" customClass="YTMoreFunctionViewController" sceneMemberID="viewController">
+                <tableViewController id="ntF-qL-dY7" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QoN-hU-J4L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,7 +337,7 @@
                             <outlet property="delegate" destination="ntF-qL-dY7" id="yH8-r6-od6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1NA-aH-BAV"/>
+                    <navigationItem key="navigationItem" title="我的联系人" id="1NA-aH-BAV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jm5-kf-O5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,55 +393,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mee-gr-Ufn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2877.5" y="-1631.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="MRg-wi-GEf">
-            <objects>
-                <viewController id="Q4M-dt-IG9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ub9-kA-eEO"/>
-                        <viewControllerLayoutGuide type="bottom" id="ceV-hO-3nL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7Ow-EF-rED">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-Ry-TE6">
-                                <rect key="frame" x="20" y="55" width="335" height="560"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="teG-ps-Lai">
-                                        <rect key="frame" x="0.0" y="30" width="335" height="530"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJa-Bc-gb3">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGw-eG-yGZ">
-                                                <rect key="frame" x="20" y="0.0" width="50" height="30"/>
-                                                <state key="normal" title="回退"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVX-5I-gET">
-                                                <rect key="frame" x="144" y="0.0" width="50" height="30"/>
-                                                <state key="normal" title="重画"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v64-iC-CKH">
-                                                <rect key="frame" x="261" y="0.0" width="50" height="30"/>
-                                                <state key="normal" title="保存"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.2497087399" blue="0.15325720800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.3934302174091433" green="0.53945694281761791" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.48221794019999997" green="1" blue="0.21606319060000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CFb-kh-mbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1848.5" y="-2470.5"/>
         </scene>
         <!--我的Memo-->
         <scene sceneID="Cun-9n-gW7">

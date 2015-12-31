@@ -417,6 +417,7 @@
 		A9D7C1D91C2AE6FC00F6814E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BA72588E1C34B7AC00BA26CB /* Contact */,
 				BA47763C1C341DD400C7B5B8 /* MoreFunction */,
 				A98CF82F1C30C7F300671409 /* Memo */,
 				A998ED4F1C2BDC3700CD7DA8 /* Setting */,
@@ -517,6 +518,13 @@
 				BAE4EACF1C32BA16004BC90B /* UIImage+Extension.m */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		BA72588E1C34B7AC00BA26CB /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Contact;
 			sourceTree = "<group>";
 		};
 		BAE4EAD71C32C314004BC90B /* Share */ = {
