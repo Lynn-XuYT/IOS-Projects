@@ -14,6 +14,7 @@
 @property(nonatomic, strong) YTViewButton *btn;
 @property(nonatomic, strong) CADisplayLink *link;
 
+
 @end
 
 @implementation YTWheel
@@ -118,12 +119,35 @@
     [self.link invalidate];
     self.link = nil;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+/**
+ *  开始选号
+ */
+- (IBAction)startChoose:(id)sender {
+    [self stopRotating];
+    
+    CABasicAnimation *anim = [CABasicAnimation animation];
+    anim.keyPath = @"transform.rotation";
+    anim.toValue = @(2 * M_PI * 3);
+    
+    anim.duration = 3.0;
+    
+    // 开头和结尾比较慢
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anim.delegate = self;
+    
+    
+    [self.centerWheel.layer addAnimation:anim forKey:nil];
+    
+    
+    self.userInteractionEnabled = NO;
 }
-*/
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    self.userInteractionEnabled = YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self startRotating];
+    });
+}
+
 
 @end

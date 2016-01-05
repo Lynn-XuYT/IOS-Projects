@@ -24,6 +24,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="LuckyCenterButton"/>
                     <state key="highlighted" backgroundImage="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="startChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="bc2-zB-xGm"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

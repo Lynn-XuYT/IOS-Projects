@@ -14,4 +14,7 @@
 + (instancetype)wheel;
 - (void)startRotating;
 - (void)stopRotating;
+- (IBAction)startChoose:(id)sender;
+
+
 @end
