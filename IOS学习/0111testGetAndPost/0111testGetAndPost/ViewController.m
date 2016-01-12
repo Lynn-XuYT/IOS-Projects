@@ -7,16 +7,22 @@
 //
 
 #import "ViewController.h"
-
+#import "NSString+Password.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *logonResult;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
+
 - (IBAction)loginBtn;
 
+@property(nonatomic, strong) NSString *myPWD;
 @end
 
 @implementation ViewController
+- (NSString *)myPWD
+{
+    return [self.pwd.text myMD5];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,8 +31,8 @@
 
 - (IBAction)loginBtn {
     
-    //[self getLogin];
-    [self postLogin];
+    [self getLogin];
+    //[self postLogin];
 }
 
 /**
@@ -74,7 +80,9 @@
 - (void)getLogin
 {
     // URL
-    NSString *urlStr = [NSString stringWithFormat:@"http://localhost/loginGet.php?username=%@&password=%@&submit=login",self.username.text, self.pwd.text];
+    NSString *urlStr = [NSString stringWithFormat:@"http://localhost/loginGet.php?username=%@&password=%@&submit=login",self.username.text, self.myPWD];
+    
+    NSLog(@"*****%@",self.myPWD);
     
     NSURL *url = [NSURL URLWithString:urlStr];
     
@@ -89,7 +97,7 @@
 //                NSLog(@"---%@",str1);
 //        NSLog(@"NSURLConnection %@",[NSThread currentThread]);
 //    }];
-    
+
     // 创建Data Task
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

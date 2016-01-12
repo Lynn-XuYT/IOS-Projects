@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA9500261C44A239004EE8BA /* MyWebDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9500251C44A239004EE8BA /* MyWebDelegateViewController.m */; };
 		BA95002C1C44B46C004EE8BA /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95002B1C44B46C004EE8BA /* NSString+Password.m */; };
+		BA95002F1C44D533004EE8BA /* YTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95002E1C44D533004EE8BA /* YTUser.m */; };
 		BAA621A11C43D23A00B16245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA621A01C43D23A00B16245 /* main.m */; };
 		BAA621A41C43D23A00B16245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA621A31C43D23A00B16245 /* AppDelegate.m */; };
 		BAA621A71C43D23A00B16245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA621A61C43D23A00B16245 /* ViewController.m */; };
@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA9500241C44A239004EE8BA /* MyWebDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebDelegateViewController.h; sourceTree = "<group>"; };
-		BA9500251C44A239004EE8BA /* MyWebDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebDelegateViewController.m; sourceTree = "<group>"; };
 		BA95002A1C44B46C004EE8BA /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
 		BA95002B1C44B46C004EE8BA /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		BA95002D1C44D533004EE8BA /* YTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTUser.h; sourceTree = "<group>"; };
+		BA95002E1C44D533004EE8BA /* YTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTUser.m; sourceTree = "<group>"; };
 		BAA6219C1C43D23A00B16245 /* 0111testGetAndPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0111testGetAndPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA621A01C43D23A00B16245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAA621A21C43D23A00B16245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,10 +116,10 @@
 				BAA621AD1C43D23A00B16245 /* LaunchScreen.storyboard */,
 				BAA621B01C43D23A00B16245 /* Info.plist */,
 				BAA6219F1C43D23A00B16245 /* Supporting Files */,
-				BA9500241C44A239004EE8BA /* MyWebDelegateViewController.h */,
-				BA9500251C44A239004EE8BA /* MyWebDelegateViewController.m */,
 				BA95002A1C44B46C004EE8BA /* NSString+Password.h */,
 				BA95002B1C44B46C004EE8BA /* NSString+Password.m */,
+				BA95002D1C44D533004EE8BA /* YTUser.h */,
+				BA95002E1C44D533004EE8BA /* YTUser.m */,
 			);
 			path = 0111testGetAndPost;
 			sourceTree = "<group>";
@@ -286,8 +286,8 @@
 				BAA621A71C43D23A00B16245 /* ViewController.m in Sources */,
 				BAA621A41C43D23A00B16245 /* AppDelegate.m in Sources */,
 				BA95002C1C44B46C004EE8BA /* NSString+Password.m in Sources */,
-				BA9500261C44A239004EE8BA /* MyWebDelegateViewController.m in Sources */,
 				BAA621A11C43D23A00B16245 /* main.m in Sources */,
+				BA95002F1C44D533004EE8BA /* YTUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,11 +46,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kyt-Hq-5Zl">
+                                <rect key="frame" x="20" y="350" width="335" height="148"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.2497087399" blue="0.15325720800000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="imageView" destination="kyt-Hq-5Zl" id="3ce-3y-NJ0"/>
                         <outlet property="logonResult" destination="frx-w1-aoC" id="xBr-5A-SLo"/>
                         <outlet property="pwd" destination="17J-0L-W5v" id="XmQ-fh-JrI"/>
                         <outlet property="username" destination="B0B-OK-JRk" id="yOq-9W-0uu"/>
