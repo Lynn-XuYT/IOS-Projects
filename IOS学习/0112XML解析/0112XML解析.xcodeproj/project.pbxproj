@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1B5E451C461CDF00C1012D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1B5E441C461CDF00C1012D /* NSArray+Log.m */; };
 		BA95003E1C453A12004EE8BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95003D1C453A12004EE8BA /* main.m */; };
 		BA9500411C453A12004EE8BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9500401C453A12004EE8BA /* AppDelegate.m */; };
 		BA9500441C453A12004EE8BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9500431C453A12004EE8BA /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1B5E431C461CDF00C1012D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		BA1B5E441C461CDF00C1012D /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		BA9500391C453A12004EE8BA /* 0112XML解析.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0112XML解析.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA95003D1C453A12004EE8BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA95003F1C453A12004EE8BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				BA95003C1C453A12004EE8BA /* Supporting Files */,
 				BA95006F1C453C68004EE8BA /* YTBook.h */,
 				BA9500701C453C68004EE8BA /* YTBook.m */,
+				BA1B5E431C461CDF00C1012D /* NSArray+Log.h */,
+				BA1B5E441C461CDF00C1012D /* NSArray+Log.m */,
 			);
 			path = "0112XML解析";
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1B5E451C461CDF00C1012D /* NSArray+Log.m in Sources */,
 				BA9500441C453A12004EE8BA /* ViewController.m in Sources */,
 				BA9500411C453A12004EE8BA /* AppDelegate.m in Sources */,
 				BA95003E1C453A12004EE8BA /* main.m in Sources */,
@@ -511,6 +517,7 @@
 				BA9500681C453A12004EE8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9500691C453A12004EE8BA /* Build configuration list for PBXNativeTarget "0112XML解析Tests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				BA95006B1C453A12004EE8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA95006C1C453A12004EE8BA /* Build configuration list for PBXNativeTarget "0112XML解析UITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +535,7 @@
 				BA95006E1C453A12004EE8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

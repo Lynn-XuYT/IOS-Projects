@@ -24,9 +24,13 @@
     [self loadData];
 }
 
-- (void)loadData
+- (IBAction)loadData
 {
-    NSString *path = @"/Users/lynn/IOS_Learning/IOS学习/0112XML解析/0112XML解析/test.xml";
+    NSString *path = @"/Users/lynn/IOS_Workspace/IOS_Learning/IOS学习/0112XML解析/0112XML解析/test.xml";
+    // 开始显示刷新控件
+    [self.refreshControl beginRefreshing];
+
+    
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSXMLParser *parser = [[NSXMLParser alloc]initWithData:data];
     
@@ -40,7 +44,9 @@
 //    
 //    // request
 //    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:0 timeoutInterval:10.0f];
-//    
+//
+//    // 开始显示刷新控件
+//    [self.refreshControl beginRefreshing];
 //    // 发送请求
 //    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 //    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
@@ -53,6 +59,29 @@
 //        // 开始解析
 //        [parser parse];
 //    }];
+}
+
+#pragma mark - 表格的数据源方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // 创建cell
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    
+    // 设置表格数据
+    YTBook *book = self.dataList[indexPath.row];
+    cell.textLabel.text = book.title;
+    cell.detailTextLabel.text = book.author;
+    
+    return cell;
 }
 
 #pragma mark - XML解析代理方法
@@ -122,10 +151,17 @@
 #pragma mark - 解析结束
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
-    NSLog(@"解析结束");
+    NSLog(@"解析结束 %@",self.dataList);
     for (YTBook *book in self.dataList) {
         NSLog(@"BOOK-%@",book);
     }
+    
+    // 网络加载数据，需要在parserDidEndDocument中，回到主线程刷新表格
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+        
+        [self.refreshControl endRefreshing];
+    });
 }
 
 #pragma mark - 出错处理
