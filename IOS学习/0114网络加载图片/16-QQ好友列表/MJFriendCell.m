@@ -11,7 +11,6 @@
 #define ICONURL @"http://localhost/res/"
 @interface MJFriendCell()
 
-
 @end
 
 @implementation MJFriendCell
@@ -45,14 +44,12 @@
     }else{
         self.imageView.image = friendData.image;
     }
-    
 
 }
 
 - (void)loadFriendImages:(MJFriend *)friendData
 {
     NSString *urlStr = [NSString stringWithFormat:@"%@%@",ICONURL,friendData.icon];
-    NSLog(@"%@ indexPath= %@",urlStr,self.indexPath);
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr] cachePolicy:0 timeoutInterval:2.0f];
     
