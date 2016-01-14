@@ -4,7 +4,7 @@
 //
 //  Created by zhu on 15/11/23.
 //  Copyright © 2015年 xu. All rights reserved.
-//
+// test dev branch
 
 #import "MJFriendCell.h"
 #import "MJFriend.h"
