@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA72D5C71C493C9B0014D691 /* YTAVMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA72D5C61C493C9B0014D691 /* YTAVMovieViewController.m */; };
 		BA885CAA1C48B94900ECC879 /* YTMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA885CA91C48B94900ECC879 /* YTMovieViewController.m */; };
 		BA885CAD1C48C89200ECC879 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA885CAC1C48C89200ECC879 /* YTPlayerView.m */; };
 		BAF18AFB1C48B50A0070AF53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18AFA1C48B50A0070AF53 /* main.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA72D5C51C493C9B0014D691 /* YTAVMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAVMovieViewController.h; sourceTree = "<group>"; };
+		BA72D5C61C493C9B0014D691 /* YTAVMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAVMovieViewController.m; sourceTree = "<group>"; };
 		BA885CA81C48B94900ECC879 /* YTMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTMovieViewController.h; sourceTree = "<group>"; };
 		BA885CA91C48B94900ECC879 /* YTMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTMovieViewController.m; sourceTree = "<group>"; };
 		BA885CAB1C48C89200ECC879 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				BA885CA91C48B94900ECC879 /* YTMovieViewController.m */,
 				BA885CAB1C48C89200ECC879 /* YTPlayerView.h */,
 				BA885CAC1C48C89200ECC879 /* YTPlayerView.m */,
+				BA72D5C51C493C9B0014D691 /* YTAVMovieViewController.h */,
+				BA72D5C61C493C9B0014D691 /* YTAVMovieViewController.m */,
 			);
 			path = "0115媒体播放器";
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				BAF18B011C48B50A0070AF53 /* ViewController.m in Sources */,
 				BAF18AFE1C48B50A0070AF53 /* AppDelegate.m in Sources */,
 				BA885CAA1C48B94900ECC879 /* YTMovieViewController.m in Sources */,
+				BA72D5C71C493C9B0014D691 /* YTAVMovieViewController.m in Sources */,
 				BA885CAD1C48C89200ECC879 /* YTPlayerView.m in Sources */,
 				BAF18AFB1C48B50A0070AF53 /* main.m in Sources */,
 			);

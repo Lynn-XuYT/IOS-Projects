@@ -8,7 +8,7 @@
         <!--Movie View Controller-->
         <scene sceneID="r8X-kz-6uw">
             <objects>
-                <viewController id="tNp-Iy-tqk" customClass="YTMovieViewController" sceneMemberID="viewController">
+                <viewController id="tNp-Iy-tqk" customClass="YTAVMovieViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ndQ-3D-jMb"/>
                         <viewControllerLayoutGuide type="bottom" id="A2M-1o-YGr"/>

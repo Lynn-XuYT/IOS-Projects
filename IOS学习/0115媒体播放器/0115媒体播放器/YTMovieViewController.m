@@ -27,6 +27,7 @@
 
 
 #pragma mark - 弃用的方法
+
 - (MPMoviePlayerController *)moviePlayer
 {
     if (!_moviePlayer) {
@@ -55,8 +56,12 @@
     
     // 截屏
     [nc addObserver:self selector:@selector(captureFinished:) name:MPMoviePlayerThumbnailImageRequestDidFinishNotification object:nil];
-    
-    [self.moviePlayer requestThumbnailImagesAtTimes:@[@(5.0),@(20.0)] timeOption:MPMovieTimeOptionNearestKeyFrame];
+    [self captureImageAtTime:0.5];
+}
+
+- (void)captureImageAtTime:(float)time
+{
+    [self.moviePlayer requestThumbnailImagesAtTimes:@[@(time)] timeOption:MPMovieTimeOptionNearestKeyFrame];
 }
 - (void)captureFinished:(NSNotification *)notification
 {
@@ -67,7 +72,7 @@
 }
 - (void)finished
 {
-    // 删除通知监听
+    // 删除通知监听AVPlayerViewController
     [[NSNotificationCenter defaultCenter]removeObserver:self];
     // 返回上级窗体
     // 谁申请，谁释放
@@ -142,12 +147,7 @@
         _avPlayer.player = self.player;
         
         _avPlayer.view.frame = self.view.bounds;
-        
-        
-        UIView *contentOverlayView = _avPlayer.contentOverlayView;
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-        [contentOverlayView addSubview:btn];
-        
+
         
         [self.view addSubview:_avPlayer.view];
     }
@@ -158,10 +158,10 @@
 {
     [super viewDidLoad];
     
-    [self.moviePlayer play];
-    [self addNotificaion];
+//    [self.moviePlayer play];
+//    [self addNotificaion];
     
-//    [self.avPlayer.player play];
+    [self.avPlayer.player play];
 //    [self.view addSubview:self.playerView];
 //    [self.playerView.player play];
     
@@ -169,6 +169,6 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    self.moviePlayer.fullscreen = YES;
+//    self.moviePlayer.fullscreen = YES;
 }
 @end
