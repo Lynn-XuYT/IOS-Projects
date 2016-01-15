@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA885CAA1C48B94900ECC879 /* YTMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA885CA91C48B94900ECC879 /* YTMovieViewController.m */; };
+		BA885CAD1C48C89200ECC879 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA885CAC1C48C89200ECC879 /* YTPlayerView.m */; };
 		BAF18AFB1C48B50A0070AF53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18AFA1C48B50A0070AF53 /* main.m */; };
 		BAF18AFE1C48B50A0070AF53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18AFD1C48B50A0070AF53 /* AppDelegate.m */; };
 		BAF18B011C48B50A0070AF53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18B001C48B50A0070AF53 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA885CA81C48B94900ECC879 /* YTMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTMovieViewController.h; sourceTree = "<group>"; };
+		BA885CA91C48B94900ECC879 /* YTMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTMovieViewController.m; sourceTree = "<group>"; };
+		BA885CAB1C48C89200ECC879 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		BA885CAC1C48C89200ECC879 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		BAF18AF61C48B50A0070AF53 /* 0115媒体播放器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0115媒体播放器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF18AFA1C48B50A0070AF53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF18AFC1C48B50A0070AF53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 				BAF18B071C48B50A0070AF53 /* LaunchScreen.storyboard */,
 				BAF18B0A1C48B50A0070AF53 /* Info.plist */,
 				BAF18AF91C48B50A0070AF53 /* Supporting Files */,
+				BA885CA81C48B94900ECC879 /* YTMovieViewController.h */,
+				BA885CA91C48B94900ECC879 /* YTMovieViewController.m */,
+				BA885CAB1C48C89200ECC879 /* YTPlayerView.h */,
+				BA885CAC1C48C89200ECC879 /* YTPlayerView.m */,
 			);
 			path = "0115媒体播放器";
 			sourceTree = "<group>";
@@ -275,6 +285,8 @@
 			files = (
 				BAF18B011C48B50A0070AF53 /* ViewController.m in Sources */,
 				BAF18AFE1C48B50A0070AF53 /* AppDelegate.m in Sources */,
+				BA885CAA1C48B94900ECC879 /* YTMovieViewController.m in Sources */,
+				BA885CAD1C48C89200ECC879 /* YTPlayerView.m in Sources */,
 				BAF18AFB1C48B50A0070AF53 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +513,7 @@
 				BAF18B251C48B50A0070AF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF18B261C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +522,7 @@
 				BAF18B281C48B50A0070AF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF18B291C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +531,7 @@
 				BAF18B2B1C48B50A0070AF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
