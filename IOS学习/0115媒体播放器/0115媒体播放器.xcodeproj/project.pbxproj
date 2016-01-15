@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAF18AFB1C48B50A0070AF53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18AFA1C48B50A0070AF53 /* main.m */; };
+		BAF18AFE1C48B50A0070AF53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18AFD1C48B50A0070AF53 /* AppDelegate.m */; };
+		BAF18B011C48B50A0070AF53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18B001C48B50A0070AF53 /* ViewController.m */; };
+		BAF18B041C48B50A0070AF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF18B021C48B50A0070AF53 /* Main.storyboard */; };
+		BAF18B061C48B50A0070AF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF18B051C48B50A0070AF53 /* Assets.xcassets */; };
+		BAF18B091C48B50A0070AF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF18B071C48B50A0070AF53 /* LaunchScreen.storyboard */; };
+		BAF18B141C48B50A0070AF53 /* _115_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18B131C48B50A0070AF53 /* _115_____Tests.m */; };
+		BAF18B1F1C48B50A0070AF53 /* _115_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF18B1E1C48B50A0070AF53 /* _115_____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF18B101C48B50A0070AF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF18AEE1C48B5090070AF53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF18AF51C48B5090070AF53;
+			remoteInfo = "0115媒体播放器";
+		};
+		BAF18B1B1C48B50A0070AF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF18AEE1C48B5090070AF53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF18AF51C48B5090070AF53;
+			remoteInfo = "0115媒体播放器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAF18AF61C48B50A0070AF53 /* 0115媒体播放器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0115媒体播放器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF18AFA1C48B50A0070AF53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAF18AFC1C48B50A0070AF53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAF18AFD1C48B50A0070AF53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAF18AFF1C48B50A0070AF53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAF18B001C48B50A0070AF53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAF18B031C48B50A0070AF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF18B051C48B50A0070AF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF18B081C48B50A0070AF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAF18B0A1C48B50A0070AF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF18B0F1C48B50A0070AF53 /* 0115媒体播放器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0115媒体播放器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF18B131C48B50A0070AF53 /* _115_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_115_____Tests.m"; sourceTree = "<group>"; };
+		BAF18B151C48B50A0070AF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF18B1A1C48B50A0070AF53 /* 0115媒体播放器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0115媒体播放器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF18B1E1C48B50A0070AF53 /* _115_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_115_____UITests.m"; sourceTree = "<group>"; };
+		BAF18B201C48B50A0070AF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF18AF31C48B5090070AF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B0C1C48B50A0070AF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B171C48B50A0070AF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAF18AED1C48B5090070AF53 = {
+			isa = PBXGroup;
+			children = (
+				BAF18AF81C48B50A0070AF53 /* 0115媒体播放器 */,
+				BAF18B121C48B50A0070AF53 /* 0115媒体播放器Tests */,
+				BAF18B1D1C48B50A0070AF53 /* 0115媒体播放器UITests */,
+				BAF18AF71C48B50A0070AF53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF18AF71C48B50A0070AF53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18AF61C48B50A0070AF53 /* 0115媒体播放器.app */,
+				BAF18B0F1C48B50A0070AF53 /* 0115媒体播放器Tests.xctest */,
+				BAF18B1A1C48B50A0070AF53 /* 0115媒体播放器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF18AF81C48B50A0070AF53 /* 0115媒体播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18AFC1C48B50A0070AF53 /* AppDelegate.h */,
+				BAF18AFD1C48B50A0070AF53 /* AppDelegate.m */,
+				BAF18AFF1C48B50A0070AF53 /* ViewController.h */,
+				BAF18B001C48B50A0070AF53 /* ViewController.m */,
+				BAF18B021C48B50A0070AF53 /* Main.storyboard */,
+				BAF18B051C48B50A0070AF53 /* Assets.xcassets */,
+				BAF18B071C48B50A0070AF53 /* LaunchScreen.storyboard */,
+				BAF18B0A1C48B50A0070AF53 /* Info.plist */,
+				BAF18AF91C48B50A0070AF53 /* Supporting Files */,
+			);
+			path = "0115媒体播放器";
+			sourceTree = "<group>";
+		};
+		BAF18AF91C48B50A0070AF53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18AFA1C48B50A0070AF53 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAF18B121C48B50A0070AF53 /* 0115媒体播放器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18B131C48B50A0070AF53 /* _115_____Tests.m */,
+				BAF18B151C48B50A0070AF53 /* Info.plist */,
+			);
+			path = "0115媒体播放器Tests";
+			sourceTree = "<group>";
+		};
+		BAF18B1D1C48B50A0070AF53 /* 0115媒体播放器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18B1E1C48B50A0070AF53 /* _115_____UITests.m */,
+				BAF18B201C48B50A0070AF53 /* Info.plist */,
+			);
+			path = "0115媒体播放器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF18AF51C48B5090070AF53 /* 0115媒体播放器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF18B231C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器" */;
+			buildPhases = (
+				BAF18AF21C48B5090070AF53 /* Sources */,
+				BAF18AF31C48B5090070AF53 /* Frameworks */,
+				BAF18AF41C48B5090070AF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "0115媒体播放器";
+			productName = "0115媒体播放器";
+			productReference = BAF18AF61C48B50A0070AF53 /* 0115媒体播放器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF18B0E1C48B50A0070AF53 /* 0115媒体播放器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF18B261C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器Tests" */;
+			buildPhases = (
+				BAF18B0B1C48B50A0070AF53 /* Sources */,
+				BAF18B0C1C48B50A0070AF53 /* Frameworks */,
+				BAF18B0D1C48B50A0070AF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF18B111C48B50A0070AF53 /* PBXTargetDependency */,
+			);
+			name = "0115媒体播放器Tests";
+			productName = "0115媒体播放器Tests";
+			productReference = BAF18B0F1C48B50A0070AF53 /* 0115媒体播放器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAF18B191C48B50A0070AF53 /* 0115媒体播放器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF18B291C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器UITests" */;
+			buildPhases = (
+				BAF18B161C48B50A0070AF53 /* Sources */,
+				BAF18B171C48B50A0070AF53 /* Frameworks */,
+				BAF18B181C48B50A0070AF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF18B1C1C48B50A0070AF53 /* PBXTargetDependency */,
+			);
+			name = "0115媒体播放器UITests";
+			productName = "0115媒体播放器UITests";
+			productReference = BAF18B1A1C48B50A0070AF53 /* 0115媒体播放器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF18AEE1C48B5090070AF53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Lynn;
+				TargetAttributes = {
+					BAF18AF51C48B5090070AF53 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HYBAG3V76T;
+					};
+					BAF18B0E1C48B50A0070AF53 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HYBAG3V76T;
+						TestTargetID = BAF18AF51C48B5090070AF53;
+					};
+					BAF18B191C48B50A0070AF53 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HYBAG3V76T;
+						TestTargetID = BAF18AF51C48B5090070AF53;
+					};
+				};
+			};
+			buildConfigurationList = BAF18AF11C48B5090070AF53 /* Build configuration list for PBXProject "0115媒体播放器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF18AED1C48B5090070AF53;
+			productRefGroup = BAF18AF71C48B50A0070AF53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF18AF51C48B5090070AF53 /* 0115媒体播放器 */,
+				BAF18B0E1C48B50A0070AF53 /* 0115媒体播放器Tests */,
+				BAF18B191C48B50A0070AF53 /* 0115媒体播放器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF18AF41C48B5090070AF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF18B091C48B50A0070AF53 /* LaunchScreen.storyboard in Resources */,
+				BAF18B061C48B50A0070AF53 /* Assets.xcassets in Resources */,
+				BAF18B041C48B50A0070AF53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B0D1C48B50A0070AF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B181C48B50A0070AF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF18AF21C48B5090070AF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF18B011C48B50A0070AF53 /* ViewController.m in Sources */,
+				BAF18AFE1C48B50A0070AF53 /* AppDelegate.m in Sources */,
+				BAF18AFB1C48B50A0070AF53 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B0B1C48B50A0070AF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF18B141C48B50A0070AF53 /* _115_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF18B161C48B50A0070AF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF18B1F1C48B50A0070AF53 /* _115_____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF18B111C48B50A0070AF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF18AF51C48B5090070AF53 /* 0115媒体播放器 */;
+			targetProxy = BAF18B101C48B50A0070AF53 /* PBXContainerItemProxy */;
+		};
+		BAF18B1C1C48B50A0070AF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF18AF51C48B5090070AF53 /* 0115媒体播放器 */;
+			targetProxy = BAF18B1B1C48B50A0070AF53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAF18B021C48B50A0070AF53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF18B031C48B50A0070AF53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF18B071C48B50A0070AF53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF18B081C48B50A0070AF53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF18B211C48B50A0070AF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF18B221C48B50A0070AF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF18B241C48B50A0070AF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "0115媒体播放器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAF18B251C48B50A0070AF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "0115媒体播放器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAF18B271C48B50A0070AF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "0115媒体播放器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/0115媒体播放器.app/0115媒体播放器";
+			};
+			name = Debug;
+		};
+		BAF18B281C48B50A0070AF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "0115媒体播放器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/0115媒体播放器.app/0115媒体播放器";
+			};
+			name = Release;
+		};
+		BAF18B2A1C48B50A0070AF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "0115媒体播放器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "0115媒体播放器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BAF18B2B1C48B50A0070AF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "0115媒体播放器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.-115-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "0115媒体播放器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF18AF11C48B5090070AF53 /* Build configuration list for PBXProject "0115媒体播放器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF18B211C48B50A0070AF53 /* Debug */,
+				BAF18B221C48B50A0070AF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF18B231C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF18B241C48B50A0070AF53 /* Debug */,
+				BAF18B251C48B50A0070AF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAF18B261C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF18B271C48B50A0070AF53 /* Debug */,
+				BAF18B281C48B50A0070AF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAF18B291C48B50A0070AF53 /* Build configuration list for PBXNativeTarget "0115媒体播放器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF18B2A1C48B50A0070AF53 /* Debug */,
+				BAF18B2B1C48B50A0070AF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF18AEE1C48B5090070AF53 /* Project object */;
+}
