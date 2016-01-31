@@ -23,6 +23,7 @@
     [super loadView];
     self.navigationItem.title = @"添加Memo";
     self.navigationItem.leftBarButtonItem.title = @"返回";
+
 }
 
 - (void)viewDidLoad {

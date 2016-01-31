@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface YTFiledownload : NSObject
 
-- (void)downloadFileWithURL:(NSURL *)url;
+- (void)downloadFileWithURL:(NSURL *)url  completion:(void(^)(UIImage *image))completion;
 @end

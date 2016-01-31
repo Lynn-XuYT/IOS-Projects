@@ -16,6 +16,7 @@
 		BA4014081C4E29410001B6FB /* _119____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4014071C4E29410001B6FB /* _119____Tests.m */; };
 		BA4014131C4E29410001B6FB /* _119____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4014121C4E29410001B6FB /* _119____UITests.m */; };
 		BA4014221C4E29A30001B6FB /* YTFiledownload.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4014211C4E29A30001B6FB /* YTFiledownload.m */; };
+		BA4576C81C50D29400620D24 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4576C71C50D29400620D24 /* NSString+Password.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BA4014141C4E29410001B6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4014201C4E29A30001B6FB /* YTFiledownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTFiledownload.h; sourceTree = "<group>"; };
 		BA4014211C4E29A30001B6FB /* YTFiledownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTFiledownload.m; sourceTree = "<group>"; };
+		BA4576C61C50D29400620D24 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		BA4576C71C50D29400620D24 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		BA4013EC1C4E29410001B6FB /* 0119文件下载 */ = {
 			isa = PBXGroup;
 			children = (
+				BA4576C51C50D29400620D24 /* Category */,
 				BA4013F01C4E29410001B6FB /* AppDelegate.h */,
 				BA4013F11C4E29410001B6FB /* AppDelegate.m */,
 				BA4013F31C4E29410001B6FB /* ViewController.h */,
@@ -143,6 +147,15 @@
 				BA4014141C4E29410001B6FB /* Info.plist */,
 			);
 			path = "0119文件下载UITests";
+			sourceTree = "<group>";
+		};
+		BA4576C51C50D29400620D24 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BA4576C61C50D29400620D24 /* NSString+Password.h */,
+				BA4576C71C50D29400620D24 /* NSString+Password.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +293,7 @@
 			files = (
 				BA4014221C4E29A30001B6FB /* YTFiledownload.m in Sources */,
 				BA4013F51C4E29410001B6FB /* ViewController.m in Sources */,
+				BA4576C81C50D29400620D24 /* NSString+Password.m in Sources */,
 				BA4013F21C4E29410001B6FB /* AppDelegate.m in Sources */,
 				BA4013EF1C4E29410001B6FB /* main.m in Sources */,
 			);

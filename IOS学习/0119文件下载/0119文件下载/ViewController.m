@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property(nonatomic, strong) YTFiledownload *download;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -19,7 +20,9 @@
     [super viewDidLoad];
     self.download = [[YTFiledownload alloc] init];
     
-    [self.download downloadFileWithURL:[NSURL URLWithString:@"http://localhost/res/002.mp4"]];
+    [self.download downloadFileWithURL:[NSURL URLWithString:@"http://localhost/res/002.png"] completion:^(UIImage *image){
+        self.imageView.image = image;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
