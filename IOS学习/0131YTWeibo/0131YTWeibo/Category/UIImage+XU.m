@@ -24,4 +24,10 @@
     // 非iOS7
     return [UIImage imageNamed:name];
 }
+
++ (UIImage *)resizeImageWithName:(NSString *)name
+{
+    UIImage *image = [self imageWithNamed:name];
+    return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height *0.5];
+}
 @end

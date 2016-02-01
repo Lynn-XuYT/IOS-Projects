@@ -10,4 +10,8 @@
 
 @interface UIImage (XU)
 + (UIImage *)imageWithNamed:(NSString *)name;
+/**
+ *  返回一个拉伸好的图片
+ */
++ (UIImage *)resizeImageWithName:(NSString *)name;
 @end

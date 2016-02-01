@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0191D61C5E2A37009B4455 /* XUTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0191D51C5E2A37009B4455 /* XUTabBarButton.m */; };
 		BA7A828B1C5DEB2E00F4934F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A828A1C5DEB2E00F4934F /* main.m */; };
 		BA7A828E1C5DEB2E00F4934F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A828D1C5DEB2E00F4934F /* AppDelegate.m */; };
 		BA7A82961C5DEB2E00F4934F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7A82951C5DEB2E00F4934F /* Assets.xcassets */; };
@@ -18,6 +19,9 @@
 		BA7A82DD1C5DEB5F00F4934F /* XUMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A82D11C5DEB5F00F4934F /* XUMeTableViewController.m */; };
 		BA7A82DE1C5DEB5F00F4934F /* XUMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A82D71C5DEB5F00F4934F /* XUMessageTableViewController.m */; };
 		BA7A82E31C5DFA2900F4934F /* UIImage+XU.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A82E21C5DFA2900F4934F /* UIImage+XU.m */; };
+		BA7A82E61C5DFE7200F4934F /* XUTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A82E51C5DFE7200F4934F /* XUTabBarView.m */; };
+		BAC8EDA41C5E71780064A589 /* XUBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8EDA31C5E71780064A589 /* XUBadgeButton.m */; };
+		BAC8EDA71C5E7C200064A589 /* XUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8EDA61C5E7C200064A589 /* XUNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA0191D41C5E2A37009B4455 /* XUTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTabBarButton.h; sourceTree = "<group>"; };
+		BA0191D51C5E2A37009B4455 /* XUTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUTabBarButton.m; sourceTree = "<group>"; };
 		BA7A82861C5DEB2E00F4934F /* 0131YTWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0131YTWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7A828A1C5DEB2E00F4934F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA7A828C1C5DEB2E00F4934F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +69,12 @@
 		BA7A82DF1C5DED4600F4934F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BA7A82E11C5DFA2900F4934F /* UIImage+XU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XU.h"; sourceTree = "<group>"; };
 		BA7A82E21C5DFA2900F4934F /* UIImage+XU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XU.m"; sourceTree = "<group>"; };
+		BA7A82E41C5DFE7200F4934F /* XUTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTabBarView.h; sourceTree = "<group>"; };
+		BA7A82E51C5DFE7200F4934F /* XUTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUTabBarView.m; sourceTree = "<group>"; };
+		BAC8EDA21C5E71780064A589 /* XUBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUBadgeButton.h; sourceTree = "<group>"; };
+		BAC8EDA31C5E71780064A589 /* XUBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUBadgeButton.m; sourceTree = "<group>"; };
+		BAC8EDA51C5E7C200064A589 /* XUNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUNavigationController.h; sourceTree = "<group>"; };
+		BAC8EDA61C5E7C200064A589 /* XUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +248,8 @@
 			children = (
 				BA7A82CA1C5DEB5E00F4934F /* XUTabBarViewController.h */,
 				BA7A82CB1C5DEB5F00F4934F /* XUTabBarViewController.m */,
+				BAC8EDA51C5E7C200064A589 /* XUNavigationController.h */,
+				BAC8EDA61C5E7C200064A589 /* XUNavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +264,12 @@
 		BA7A82CD1C5DEB5F00F4934F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA7A82E41C5DFE7200F4934F /* XUTabBarView.h */,
+				BA7A82E51C5DFE7200F4934F /* XUTabBarView.m */,
+				BA0191D41C5E2A37009B4455 /* XUTabBarButton.h */,
+				BA0191D51C5E2A37009B4455 /* XUTabBarButton.m */,
+				BAC8EDA21C5E71780064A589 /* XUBadgeButton.h */,
+				BAC8EDA31C5E71780064A589 /* XUBadgeButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,14 +480,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC8EDA71C5E7C200064A589 /* XUNavigationController.m in Sources */,
 				BA7A82E31C5DFA2900F4934F /* UIImage+XU.m in Sources */,
 				BA7A82DD1C5DEB5F00F4934F /* XUMeTableViewController.m in Sources */,
 				BA7A82DE1C5DEB5F00F4934F /* XUMessageTableViewController.m in Sources */,
+				BA7A82E61C5DFE7200F4934F /* XUTabBarView.m in Sources */,
+				BA0191D61C5E2A37009B4455 /* XUTabBarButton.m in Sources */,
 				BA7A82DC1C5DEB5F00F4934F /* XUTabBarViewController.m in Sources */,
 				BA7A82DA1C5DEB5F00F4934F /* XUDiscoverTableViewController.m in Sources */,
 				BA7A828E1C5DEB2E00F4934F /* AppDelegate.m in Sources */,
 				BA7A82DB1C5DEB5F00F4934F /* XUHomeTableViewController.m in Sources */,
 				BA7A828B1C5DEB2E00F4934F /* main.m in Sources */,
+				BAC8EDA41C5E71780064A589 /* XUBadgeButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +700,7 @@
 				BA7A82B51C5DEB2E00F4934F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA7A82B61C5DEB2E00F4934F /* Build configuration list for PBXNativeTarget "0131YTWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +709,7 @@
 				BA7A82B81C5DEB2E00F4934F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA7A82B91C5DEB2E00F4934F /* Build configuration list for PBXNativeTarget "0131YTWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +718,7 @@
 				BA7A82BB1C5DEB2E00F4934F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
