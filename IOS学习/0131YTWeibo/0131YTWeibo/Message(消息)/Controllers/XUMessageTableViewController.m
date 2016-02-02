@@ -14,9 +14,11 @@
 
 @implementation XUMessageTableViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"写私信" style:(UIBarButtonItemStylePlain) target:nil action:nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

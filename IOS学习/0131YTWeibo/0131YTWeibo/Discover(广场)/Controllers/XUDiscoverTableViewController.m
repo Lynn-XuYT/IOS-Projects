@@ -7,6 +7,7 @@
 //
 
 #import "XUDiscoverTableViewController.h"
+#import "XUSearchBar.h"
 
 @interface XUDiscoverTableViewController ()
 
@@ -16,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    XUSearchBar *searchBar = [XUSearchBar searchBar];
+    // 尺寸
+    CGFloat w = [UIScreen mainScreen].bounds.size.width -20;
+    searchBar.frame = CGRectMake(0, 0, w, 30);
+    // 设置导航栏的标题
+    self.navigationItem.titleView = searchBar;
 }
 
 - (void)didReceiveMemoryWarning {

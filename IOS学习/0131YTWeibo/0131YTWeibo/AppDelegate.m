@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "XUTabBarViewController.h"
+#import "XUOAuthViewController.h"
+#import "XUAccount.h"
+#import "XUAccountTool.h"
 @interface AppDelegate ()
 
 @end
@@ -22,9 +25,21 @@
     application.statusBarStyle = UIStatusBarStyleLightContent;
     
     CGRect rect = [[UIScreen mainScreen] bounds];
-    NSLog(@"%@",[NSValue valueWithCGRect:rect]);
     self.window = [[UIWindow alloc]initWithFrame:rect];
-    self.window.rootViewController = [[XUTabBarViewController alloc]init];
+//    self.window.rootViewController = [[XUTabBarViewController alloc]init];
+
+
+    // 先判断有无存储账号信息
+    XUAccount *account = [XUAccountTool account];
+    XULog(@"access_token----%@",account.access_token);
+    if (account) {
+        self.window.rootViewController = [[XUTabBarViewController alloc]init];
+        
+    }else
+    {
+        self.window.rootViewController = [[XUOAuthViewController alloc]init];
+    }
+   
     [self.window makeKeyAndVisible];
     
     return YES;

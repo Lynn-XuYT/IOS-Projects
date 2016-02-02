@@ -28,22 +28,24 @@
 + (void)setupBarButtonItem
 {
     UIBarButtonItem *item = [UIBarButtonItem appearance];
-    
-    // 设置背景
-    [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background"] forState:(UIControlStateNormal) barMetrics:(UIBarMetricsDefault)];
-    [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background_pushed"] forState:(UIControlStateSelected) barMetrics:(UIBarMetricsDefault)];
-    [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background_pushed_disable"] forState:(UIControlStateDisabled) barMetrics:(UIBarMetricsDefault)];
+    if (!iOS7) {
+        // 设置背景
+        [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background"] forState:(UIControlStateNormal) barMetrics:(UIBarMetricsDefault)];
+        [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background_pushed"] forState:(UIControlStateSelected) barMetrics:(UIBarMetricsDefault)];
+        [item setBackButtonBackgroundImage:[UIImage imageWithNamed:@"navigationbar_button_background_pushed_disable"] forState:(UIControlStateDisabled) barMetrics:(UIBarMetricsDefault)];
+    }
+
     // 设置文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
     //    textAttrs[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:14];
     [item setTitleTextAttributes:textAttrs forState:(UIControlStateNormal)];
 }
 
 
 /**
- *  设置导航栏主题
+ *  设置导航栏主题daolanlanyan
  */
 + (void)setupNavBarTheme
 {
@@ -57,7 +59,7 @@
     }
     // 设置标题属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
+//    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
     //    textAttrs[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:19];
     [navBar setTitleTextAttributes:textAttrs];
